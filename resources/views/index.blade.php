@@ -7,9 +7,8 @@
   <title>Title</title>
 </head>
 <body>
-<h1>sample</h1>
-<div id="example">
-    <example-component></example-component>
+<div id="root">
+    {{-- <example-component></example-component> --}}
 </div>
 
 <script src="{{ asset('/js/app.js') }}"></script>

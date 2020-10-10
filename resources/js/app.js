@@ -21,5 +21,5 @@ require('./bootstrap');
 // 。次に、このアプリケーションにコンポーネントを追加し始めることができます
 // または、独自のニーズに合わせてJavaScriptスキャフォールディングをカスタマイズします。
 
-require('./components/Example');
-require('./index.js');
+// require('./components/Example');
+require('./src/index');
