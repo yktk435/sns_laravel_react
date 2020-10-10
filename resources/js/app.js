@@ -4,6 +4,10 @@
  * building robust, powerful web applications using React + Laravel.
  */
 
+// まず、このプロジェクトのJavaScript依存関係をすべてロードします。
+// Reactやその他のヘルパーが含まれます。それは素晴らしい出発点ですが
+// React + Laravelを使用して堅牢で強力なWebアプリケーションを構築します。
+
 require('./bootstrap');
 
 /**
@@ -12,4 +16,10 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+
+// 次に、新しいReactコンポーネントインスタンスを作成し、ページにアタッチします
+// 。次に、このアプリケーションにコンポーネントを追加し始めることができます
+// または、独自のニーズに合わせてJavaScriptスキャフォールディングをカスタマイズします。
+
 require('./components/Example');
+require('./index.js');
