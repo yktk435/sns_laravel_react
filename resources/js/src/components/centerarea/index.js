@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Home from './home/home'
+import Home from '../../containers/home'
 // import { Switch, Route, Redirect } from 'react-router-dom';
 import Notification from './notification/notification'
 import Dm from './dm/dm'

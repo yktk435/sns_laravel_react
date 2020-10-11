@@ -13,7 +13,6 @@ export default class Ranking extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     const { category, ranking, error } = this.props;
 
     return (

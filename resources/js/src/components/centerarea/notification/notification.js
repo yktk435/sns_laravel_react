@@ -22,8 +22,7 @@ class Notification extends Component {
                 borderBottom: "3px solid rgb(48, 60, 67)"
             },
         }
-        console.log(this)
-        console.log(props)
+        
         // this.menu = this.replyNotificationMenu()
 
 

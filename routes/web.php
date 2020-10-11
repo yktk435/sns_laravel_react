@@ -17,7 +17,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 // Route::resource('test','RestTestController');
-
+Route::get('/', function(){
+    return view('index');
+});
 Route::get('/{any}', function(){
     return view('index');
-})->where('any', '.*'); //補足：.*は、正規表現で0文字以上の任意の文字列を意味する
+})->where('any', '[^(images)].*'); //補足：.*は、正規表現で0文字以上の任意の文字列を意味する
+
+Route::get('/images/{file}','ImageController@getImage');
+

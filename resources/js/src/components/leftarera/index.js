@@ -14,8 +14,10 @@ import setting from '../images/setting.png'
 import cathand2 from '../images/cathand2.png'
 
 class LeftArea extends React.Component {
+    componentWillMount() {
+        this.props.windowSizeChange(window.innerWidth)
+    }
     render() {
-        console.log("this.props", this.props)
         return (
             <header>
                 <EventListener target="window" onResize={(e) => this.props.windowSizeChange(e.target.innerWidth)} />
@@ -27,8 +29,8 @@ class LeftArea extends React.Component {
                             </a></Link>
                         </div>
                         <div>
-                            
-                            
+
+
                             <IconParts displayString={this.props.displayString} classNameString={this.props.classNameString} menuname="home" to="home" alt="ホームアイコン" innerstr="ホーム" image={home} />
                             <IconParts displayString={this.props.displayString} classNameString={this.props.classNameString} menuname="search" to="search" alt="検索アイコン" innerstr="検索" image={search} />
                             <IconParts displayString={this.props.displayString} classNameString={this.props.classNameString} menuname="notification" to="notification" alt="通知アイコン" innerstr="通知" image={notification} />
@@ -51,8 +53,7 @@ class LeftArea extends React.Component {
 
 }
 const IconParts = (props) => {
-    console.log('000000000000000000000000000000000000000')
-    console.log(props)
+    
     return (
         <div className={props.classNameString}>
             <Link to={props.to}><a className="spreaded-icon-a" style={{ height: "36px" }}>
@@ -60,7 +61,7 @@ const IconParts = (props) => {
                     <div style={{ float: "left" }}>
                         <img className="img-size" src={props.image} alt={props.alt} />
                     </div>
-                    <div className="icon-discription spreaded-icon-name" style={{display:props.displayString}}>{props.innerstr}</div>
+                    <div className="icon-discription spreaded-icon-name" style={{ display: props.displayString }}>{props.innerstr}</div>
                 </React.Fragment>
             </a></Link>
 

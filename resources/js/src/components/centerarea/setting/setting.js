@@ -23,11 +23,6 @@ class Setting extends React.Component{
 
     
 }
-const CenterItemName = (props) => {
-
-
-
-}
 const CenterItem = (props) => {
     return (
         <div class="setting-outer setting-name-hover">

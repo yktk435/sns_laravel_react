@@ -1,46 +1,60 @@
 import React from 'react'
 // import { Link } from 'react-router-dom';
 // 画像
+import pic from '../../images/pic.png'
+
+import userImageUrl from '../../images/user.jpg'
 
 
+class Home extends React.Component {
+    render() {
+        
+        
+        let userInfo = {
+            userImageUrl: "./src/work/image/user.jpg"
+        }
+        let PostedUserInfo = {
+            userName: this.props.userName,
+            userImageUrl: "./src/work/image/user.jpg",
+            userId: "testuser",
+            createdAt: "202x年x月x日",
+            postImageUrl: "./src/work/image/user.jpg",
 
-const Home = () => {
-    let userInfo = {
-        userImageUrl: "../../images/user.jpg"
-    }
-    let PostedUserInfo = {
-        userName: "テスユーザ",
-        userImageUrl: "../../images/user.jpg",
-        userId: "testuser",
-        createdAt: "202x年x月x日",
-        postImageUrl: "../../images/user.jpg",
+        }
+        let request = {
+            method: "post",
+            body: {
+                test: "test"
+            }
+        }
+        return (
+            <div className="main-container" style={{ overflow: "auto" }}>
 
-    }
-    let pic='../../images/pic.png'
-
-    return (
-        <div className="main-container" style={{ overflow: "auto" }}>
-            
                 {/* メニュー特有のなにか */}
                 <div style={{ borderBottom: "8px solid rgb(48, 60, 67)", height: "auto", padding: "10px" }} className="post-screen">
-                    
-                        <div style={{ float: "left" }} aria-label="ユーザアイコン">
-                            <div style={{ margin: "5px" }}>
-                                <a class="" href="" aria-label="ユーザアイコン">
-                            <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} class="" src={userInfo.userImageUrl} alt="ユーザアイコン" />
-                                </a>
-                            </div>
+
+                    <div style={{ float: "left" }} aria-label="ユーザアイコン">
+                        <div style={{ margin: "5px" }}>
+                            <a className="" href="" aria-label="ユーザアイコン">
+                                <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={this.props.userImageUrl} alt="ユーザアイコン" />
+                            </a>
                         </div>
-                        <div class="text-area" contentEditable="true" placeholder="aaaaaa"></div>
-                        <div style={{ display: "flex", marginTop: "15px", marginBottom: "5px" }}>
-                            <div style={{ display: "flex", marginLeft: "auto" }}>
-                                <a style={{ margin: "0 5px" }} class="icon-link simple-icon" href="" aria-label="写真追加">
-                                    <img class="image-icon" src={pic} alt="写真追加アイコン" />
-                                </a>
-                                <a style={{ margin: "0 5px", }} href="" class="btn btn--orange btn--radius" aria-label="投稿ボタン">投稿</a>
-                            </div>
-                        </div>
+                    </div>
+                    <div onFocus={(e) => this.props.inputPostText(e.target.innerText)} onBlur={(e) => this.props.inputPostText(e.target.innerText)} className="text-area" contentEditable="true" >{this.props.text}</div>
                     
+                    <div style={{ display: "flex", marginTop: "15px", marginBottom: "5px" }}>
+                        <div style={{ display: "flex", marginLeft: "auto" }}>
+                            <a style={{ margin: "0 5px" }} className="icon-link simple-icon" href="" aria-label="写真追加">
+                                <img className="image-icon" src={pic} alt="写真追加アイコン" />
+                            </a>
+                            <a onClick={() => {
+                                
+                                this.props.post(this.props.requestData)
+                                this.props.clearTextBox()
+                            }} style={{ margin: "0 5px", }} className="btn btn--orange btn--radius" aria-label="投稿ボタン">投稿</a>
+                        </div>
+                    </div>
+
                 </div>
                 {/* みんなの投稿 */}
                 <div>
@@ -48,8 +62,10 @@ const Home = () => {
                     <OtherPost {...PostedUserInfo} />
                     <OtherPost {...PostedUserInfo} />
                 </div>
-        </div >
-    )
+            </div >
+        )
+    }
+
 }
 const OtherPost = (props) => {
 
@@ -60,7 +76,7 @@ const OtherPost = (props) => {
                 <div style={{ marginRight: "10px" }} aria-label="ユーザアイコン">
                     <div style={{ margin: "5px" }}>
                         <a className="" href="" aria-label="ユーザアイコン">
-                            <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={props.userImageUrl} alt="ユーザアイコン" />
+                            <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={userImageUrl} alt="ユーザアイコン" />
                         </a>
                     </div>
                 </div>
@@ -87,7 +103,7 @@ const OtherPost = (props) => {
                                 return (
                                     <div style={{ padding: "5px 0" }} aria-label="投稿した写真を表示">
                                         <a href="" >
-                                            <img src={props.postImageUrl} alt="投稿した写真を表示" style={{ width: "90%", borderRadius: "5%" }} />
+                                            <img src={userImageUrl} alt="投稿した写真を表示" style={{ width: "90%", borderRadius: "5%" }} />
                                         </a>
                                     </div>
                                 )

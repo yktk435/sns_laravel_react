@@ -11,9 +11,17 @@ class RestTestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return json_encode('get');
+
+        $env="http://localhost:8000/images/";
+        $data = [
+            "userName" => "userName",
+            "userId" => "userId",
+            "iconUrl" => $env."user.jpg",
+            "headerUrl"=>$env."user_header.jpg",
+        ];
+        return json_encode($data);
     }
 
     /**
@@ -34,7 +42,7 @@ class RestTestController extends Controller
      */
     public function store(Request $request)
     {
-        return json_encode('post');
+        return json_encode($request->all());
     }
 
     /**

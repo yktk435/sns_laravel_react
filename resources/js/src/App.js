@@ -10,6 +10,10 @@ import Login from './containers/login'
 // import CenterArea from './components/centerarea'
 import './index.css'
 class App extends Component {
+  componentWillMount() {
+
+    this.props.getUserInfo()
+  }
 
   render() {
     this.comp=(

@@ -27,7 +27,7 @@ const Profile = () => {
                 <div style={{ padding: "15px" }}>
                     {/* <!-- プロフィール編集ボタン --> */}
                     <div className="icon-container" style={{ width: "170px", margin: "0px 0px 0px auto", height: "40px" }}>
-                        <a className="a-to-block edit-prof" href="" style={{ borderRadius: "100px", position: "relative", color: "white", textDecoration: "none", border: "1px solid rgba(29,161,242,1.00)", color: "rgba(29,161,242,1.00)" }}>
+                        <a className="a-to-block edit-prof" href="" style={{ borderRadius: "100px", position: "relative", textDecoration: "none", border: "1px solid rgba(29,161,242,1.00)", color: "rgba(29,161,242,1.00)" }}>
                             <div className="" style={{ position: "absolute", top: "0", right: "0", bottom: "0", left: "0", margin: "auto", width: "80%", height: "20px", textAlign: "center", fontSize: "15px", fontWeight: "bold" }}>プロフィールを編集</div>
                         </a>
                     </div>

@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux'; // 追加
 import createBrowserHistory from 'history/createBrowserHistory'; // 追加
-import App from './App';
+import App from './containers/App';
 // 削除: import * as reducers from './reducers';
 import createStore from './createStore'; // 追加
 

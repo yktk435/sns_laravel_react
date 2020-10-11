@@ -12,7 +12,6 @@ export const windowSizeChange = width => {
     }
     if (1270 <= width) { //3分割 すべて展開
 
-        console.log('すべて展開')
         rightAreaWidth.rightAreaWidth = "350px"
         rightAreaWidth.display = 'block'
         leftAreaWidth.leftAreaWidth = "250px"
@@ -26,7 +25,6 @@ export const windowSizeChange = width => {
     } else {
         // アイコンをもとに戻す
         if (leftAreaWidth.classNameString.match(/if-spreaded/)) {
-            console.log('if-spreaded → outer')
             leftAreaWidth.classNameString = leftAreaWidth.classNameString.replace('if-spreaded', 'outer')
         }
         // アイコンの説明を非表示
@@ -35,11 +33,9 @@ export const windowSizeChange = width => {
         if (width < 950) { //それより小さい縦幅なら
             rightAreaWidth.display = 'none'
         } else if (950 <= width && width < 1000) { //2分割
-            console.log('2分割')
             leftAreaWidth.leftAreaWidth = "70px"
             rightAreaWidth.display = 'none'
         } else if (1000 <= width && width < 1270) { //3分割
-            console.log('3分割')
             leftAreaWidth.leftAreaWidth = "70px"
             rightAreaWidth.rightAreaWidth = "350px"
             rightAreaWidth.display = 'block'

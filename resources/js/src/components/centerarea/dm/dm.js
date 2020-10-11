@@ -1,11 +1,10 @@
 import React from 'react'
-
-
+import taro from '../../images/taro.png'
 const Dm = () => {
     let info = {
         userName: "username",
         userId: "userId",
-        userImageUrl: "../../images/taro.png",
+        userImageUrl: "./src/work/image/taro.png",
         createdAt: "202x年x月x日",
         content: "送信内容",
     }
@@ -28,7 +27,7 @@ const DmParts = (props) => {
             <div style={{ marginRight: "10px" }} aria-label="ユーザアイコン">
                 <div style={{ margin: "5px" }}>
                     <a className="" href="" aria-label="ユーザアイコン">
-                        <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={props.userImageUrl} alt="ユーザアイコン" />
+                        <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={taro} alt="ユーザアイコン" />
                     </a>
                 </div>
             </div>
