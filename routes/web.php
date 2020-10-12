@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\LoginCheckMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +26,6 @@ Route::get('/{any}', function(){
 })->where('any', '[^(images)(test)].*'); //補足：.*は、正規表現で0文字以上の任意の文字列を意味する
 
 Route::get('/images/{file}','ImageController@getImage');
-Route::resource('/test','RestTestController2');
+Route::resource('/test','RestTestController2')->middleware(LoginCheckMiddleware::class);
 
 

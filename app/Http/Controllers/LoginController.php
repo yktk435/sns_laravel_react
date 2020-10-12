@@ -3,22 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Article;
 use App\Member;
-use App\Token;
-class RestTestController2 extends Controller
+
+class LoginController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        // dd($request->all());
-
-    
-        
+        //
     }
 
     /**
@@ -39,7 +35,23 @@ class RestTestController2 extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $env = "http://localhost:8000/images/";
+        $data = $request->all();
+        $userId = $data['userId'];
+        $pass = $data['pass'];
+
+        $member = Member::where('user_id', $userId)->first();
+        $pass = Member::where('password', $pass)->first();
+        if ($member == null || $pass==null) return 'a';
+        $member = $member->toArray();
+
+        $array = [
+            "userName" => $member['name'],
+            "userId" => $member['user_id'],
+            "iconUrl" => $member['icon'],
+            "postImageUrl" => $member['header'],
+        ];
+        return $array;
     }
 
     /**

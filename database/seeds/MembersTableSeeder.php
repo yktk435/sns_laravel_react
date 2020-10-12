@@ -18,7 +18,8 @@ class MembersTableSeeder extends Seeder
             'user_id'=>'keso_niconico',
             'password'=>123456789,
             'email'=>'user@example.com',
-            'icon'=>'https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg',
+            'icon'=>'https://pbs.twimg.com/profile_images/1014424885769035777/f6KPqngC_400x400.jpg',
+            'header'=>'https://pbs.twimg.com/profile_banners/783289792041594880/1475586873/1500x500'
         ];
         DB::table('members')->insert($param);
         $param=[
@@ -27,7 +28,8 @@ class MembersTableSeeder extends Seeder
             'user_id'=>'hanemoon920',
             'password'=>123456789,
             'email'=>'user@example.com',
-            'icon'=>'https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg',
+            'icon'=>'https://pbs.twimg.com/profile_images/1193162093001768962/eBt6RkxQ_400x400.png',
+            'header'=>'https://pbs.twimg.com/profile_banners/140200458/1583263514/600x200'
         ];
         DB::table('members')->insert($param);
         $param=[
@@ -37,6 +39,8 @@ class MembersTableSeeder extends Seeder
             'password'=>123456789,
             'email'=>'user@example.com',
             'icon'=>'https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg',
+            'header'=>'https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg',
+            
         ];
         DB::table('members')->insert($param);
         $param=[
@@ -46,6 +50,7 @@ class MembersTableSeeder extends Seeder
             'password'=>123456789,
             'email'=>'user@example.com',
             'icon'=>'https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg',
+            'header'=>'https://tk.ismcdn.jp/mwimgs/e/b/1140/img_eb31afc9c1fb914d68a7c73b657c7ebe183087.jpg',
         ];
         DB::table('members')->insert($param);
         

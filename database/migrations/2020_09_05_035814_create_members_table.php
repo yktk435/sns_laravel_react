@@ -21,6 +21,7 @@ class CreateMembersTable extends Migration
             $table->string('password');
             $table->string('email');
             $table->string('icon');    
+            $table->string('header');    
         });
     }
 
