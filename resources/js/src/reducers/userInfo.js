@@ -1,11 +1,23 @@
 const initialState = {
-    userName: undefined,
-    userId: undefined,
-    iconUrl: undefined,
-    headerUrl: undefined,
-    accessToken: undefined,
-    response: undefined,
-    error: false
+    user: {
+        userName: undefined,
+        userId: undefined,
+        iconUrl: undefined,
+        headerUrl: undefined,
+        accessToken: undefined,
+        response: undefined,
+        error: false
+    },
+    otherUser: {
+        userName: undefined,
+        userId: undefined,
+        iconUrl: undefined,
+        headerUrl: undefined,
+        accessToken: undefined,
+        response: undefined,
+        error: false
+    }
+
 };
 
 
@@ -15,15 +27,30 @@ export default (state = initialState, action) => {
     switch (action.type) {
         case 'GET_USERINFO':
             return action.payload.error
-                ? { ...state, error: true }
+                ? { user: { ...state, error: true } }
                 : {
                     // 通信エラーエラーがないなら
                     // API側のキーにの撮ってすべて展開
-                    ...action.payload.response,
-                    error: false,
-                    
+                    ...state,
+                    user: {
+                        ...action.payload.response,
+                        error: false,
+                    },
                 };
-
+            break;
+        case 'GET_OTHER_USERINFO':
+            return action.payload.error
+                ? { otherUser: { ...state, error: true } }
+                : {
+                    // 通信エラーエラーがないなら
+                    // API側のキーにの撮ってすべて展開
+                    ...state,
+                    otherUser: {
+                        ...action.payload.response,
+                        error: false,
+                    },
+                };
+            break;
         default:
             return state;
     }

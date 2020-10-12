@@ -4,10 +4,9 @@ import React, { Component } from 'react';
 // import Ranking from './containers/Ranking';
 import LeftArea from './containers/leftarea'
 import RightArea from './containers/rightarea'
-// containerにするとルーティングできなくなる
 import CenterArea from './containers/centerarea'
 import Login from './containers/login'
-// import CenterArea from './components/centerarea'
+import { Switch, Route, Redirect } from 'react-router-dom';
 import './index.css'
 class App extends Component {
   componentWillMount() {

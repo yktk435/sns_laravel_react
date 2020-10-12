@@ -7,11 +7,11 @@ import * as home from '../actions/home'
 const mapStateToProps = (state, ownProps) => {
   return (
     {
-      userName: state.userInfo.userName,
-      userId: state.userInfo.userId,
-      iconUrl: state.userInfo.iconUrl,
-      headerUrl: state.userInfo.headerUrl,
-      accessToken: state.userInfo.accessToken,
+      userName: state.userInfo.user.userName,
+      userId: state.userInfo.user.userId,
+      iconUrl: state.userInfo.user.iconUrl,
+      headerUrl: state.userInfo.user.headerUrl,
+      accessToken: state.userInfo.user.accessToken,
       error: false,
       requestData: {text:state.home.text},
       text: state.home.text,

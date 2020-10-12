@@ -76962,8 +76962,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_rightarea__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./containers/rightarea */ "./resources/js/src/containers/rightarea.js");
 /* harmony import */ var _containers_centerarea__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./containers/centerarea */ "./resources/js/src/containers/centerarea.js");
 /* harmony import */ var _containers_login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/login */ "./resources/js/src/containers/login.js");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.css */ "./resources/js/src/index.css");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./index.css */ "./resources/js/src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -76991,10 +76992,9 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 // import Ranking from './containers/Ranking';
 
 
- // containerにするとルーティングできなくなる
 
 
- // import CenterArea from './components/centerarea'
+
 
 
 
@@ -77035,19 +77035,21 @@ var App = /*#__PURE__*/function (_Component) {
 /*!*******************************************!*\
   !*** ./resources/js/src/actions/fetch.js ***!
   \*******************************************/
-/*! exports provided: post, getUserInfo */
+/*! exports provided: post, getUserInfo, getOtherUserInfo */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "post", function() { return post; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUserInfo", function() { return getUserInfo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOtherUserInfo", function() { return getOtherUserInfo; });
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var fetch_jsonp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fetch-jsonp */ "../../node_modules/fetch-jsonp/build/fetch-jsonp.js");
 /* harmony import */ var fetch_jsonp__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fetch_jsonp__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! qs */ "./node_modules/qs/lib/index.js");
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(qs__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-redux */ "./node_modules/react-router-redux/es/index.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -77055,6 +77057,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 // src/actions/Ranking.js
+
 
 
 var API_URL = 'http://localhost:8000/api/test';
@@ -77091,6 +77094,16 @@ var finishRequest = function finishRequest(response) {
 var getUserInfoAction = function getUserInfoAction(response, error) {
   return {
     type: 'GET_USERINFO',
+    payload: {
+      response: response,
+      error: error
+    }
+  };
+};
+
+var getOtherUserInfoAction = function getOtherUserInfoAction(response, error) {
+  return {
+    type: 'GET_PTHER_USERINFO',
     payload: {
       response: response,
       error: error
@@ -77189,6 +77202,47 @@ var getUserInfo = function getUserInfo() {
 
     return function (_x3, _x4) {
       return _ref2.apply(this, arguments);
+    };
+  }();
+};
+var getOtherUserInfo = function getOtherUserInfo() {
+  // getState関数でstate.shopping.categoriesにアクセスする
+  return /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(dispatch, getState) {
+      var responce, data;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.prev = 0;
+              _context3.next = 3;
+              return fetch('http://localhost:8000/api/test');
+
+            case 3:
+              responce = _context3.sent;
+              _context3.next = 6;
+              return responce.json();
+
+            case 6:
+              data = _context3.sent;
+              dispatch(getOtherUserInfoAction(data, null));
+              _context3.next = 12;
+              break;
+
+            case 10:
+              _context3.prev = 10;
+              _context3.t0 = _context3["catch"](0);
+
+            case 12:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3, null, [[0, 10]]);
+    }));
+
+    return function (_x5, _x6) {
+      return _ref3.apply(this, arguments);
     };
   }();
 };
@@ -77806,7 +77860,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dm_dm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dm/dm */ "./resources/js/src/components/centerarea/dm/dm.js");
 /* harmony import */ var _containers_profile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../containers/profile */ "./resources/js/src/containers/profile.js");
 /* harmony import */ var _setting_setting__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./setting/setting */ "./resources/js/src/components/centerarea/setting/setting.js");
-/* harmony import */ var _profile_otherUserPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./profile/otherUserPage */ "./resources/js/src/components/centerarea/profile/otherUserPage.js");
+/* harmony import */ var _containers_otherUserPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../containers/otherUserPage */ "./resources/js/src/containers/otherUserPage.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -77884,7 +77938,7 @@ var CenterArea = /*#__PURE__*/function (_React$Component) {
         component: _setting_setting__WEBPACK_IMPORTED_MODULE_6__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/user/:userId",
-        component: _profile_otherUserPage__WEBPACK_IMPORTED_MODULE_7__["default"]
+        component: _containers_otherUserPage__WEBPACK_IMPORTED_MODULE_7__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/",
         render: function render() {
@@ -80204,11 +80258,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    userName: state.userInfo.userName,
-    userId: state.userInfo.userId,
-    iconUrl: state.userInfo.iconUrl,
-    headerUrl: state.userInfo.headerUrl,
-    accessToken: state.userInfo.accessToken,
+    userName: state.userInfo.user.userName,
+    userId: state.userInfo.user.userId,
+    iconUrl: state.userInfo.user.iconUrl,
+    headerUrl: state.userInfo.user.headerUrl,
+    accessToken: state.userInfo.user.accessToken,
     error: false,
     requestData: {
       text: state.home.text
@@ -80300,9 +80354,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    userName: state.Login.userName,
-    pass: state.Login.pass,
-    error: state.Login.error
+    userName: ''
   };
 };
 
@@ -80321,6 +80373,57 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps, mapDispatchToProps)(_components_login__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/otherUserPage.js":
+/*!******************************************************!*\
+  !*** ./resources/js/src/containers/otherUserPage.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _components_centerarea_profile_otherUserPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/centerarea/profile/otherUserPage */ "./resources/js/src/components/centerarea/profile/otherUserPage.js");
+/* harmony import */ var _actions_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../actions/fetch */ "./resources/js/src/actions/fetch.js");
+/* harmony import */ var _actions_profile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../actions/profile */ "./resources/js/src/actions/profile.js");
+// src/containers/Ranking.js
+
+
+
+
+
+var mapStateToProps = function mapStateToProps(state, ownProps) {
+  return {
+    userName: state.userInfo.otherUser.userName,
+    userId: state.userInfo.otherUser.userId,
+    iconUrl: state.userInfo.otherUser.iconUrl,
+    headerUrl: state.userInfo.otherUser.headerUrl,
+    accessToken: state.userInfo.otherUser.accessToken,
+    style: state.profile.style,
+    // 投稿、返信、写真、グッドのどれを見ているか
+    menuMode: state.profile.menuMode,
+    // 投稿
+    postObj: state.userInfo.otherUser.postObj,
+    // 返信
+    // 写真
+    picObj: state.profile.picObj,
+    // ぐっと
+    goodObj: state.profile.goodObj
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    clickMenuItem: function clickMenuItem(e) {
+      dispatch(_actions_profile__WEBPACK_IMPORTED_MODULE_3__["clickMenuItem"](e));
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps, mapDispatchToProps)(_components_centerarea_profile_otherUserPage__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
 /***/ }),
 
@@ -80345,16 +80448,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    userName: state.userInfo.userName,
-    userId: state.userInfo.userId,
-    iconUrl: state.userInfo.iconUrl,
-    headerUrl: state.userInfo.headerUrl,
-    accessToken: state.userInfo.accessToken,
+    userName: state.userInfo.user.userName,
+    userId: state.userInfo.user.userId,
+    iconUrl: state.userInfo.user.iconUrl,
+    headerUrl: state.userInfo.user.headerUrl,
+    accessToken: state.userInfo.user.accessToken,
     style: state.profile.style,
     // 投稿、返信、写真、グッドのどれを見ているか
     menuMode: state.profile.menuMode,
     // 投稿
-    postObj: state.userInfo.postObj,
+    postObj: state.userInfo.user.postObj,
     // 返信
     // 写真
     picObj: state.profile.picObj,
@@ -80749,13 +80852,24 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var initialState = {
-  userName: undefined,
-  userId: undefined,
-  iconUrl: undefined,
-  headerUrl: undefined,
-  accessToken: undefined,
-  response: undefined,
-  error: false
+  user: {
+    userName: undefined,
+    userId: undefined,
+    iconUrl: undefined,
+    headerUrl: undefined,
+    accessToken: undefined,
+    response: undefined,
+    error: false
+  },
+  otherUser: {
+    userName: undefined,
+    userId: undefined,
+    iconUrl: undefined,
+    headerUrl: undefined,
+    accessToken: undefined,
+    response: undefined,
+    error: false
+  }
 };
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -80763,11 +80877,28 @@ var initialState = {
 
   switch (action.type) {
     case 'GET_USERINFO':
-      return action.payload.error ? _objectSpread(_objectSpread({}, state), {}, {
-        error: true
-      }) : _objectSpread(_objectSpread({}, action.payload.response), {}, {
-        error: false
+      return action.payload.error ? {
+        user: _objectSpread(_objectSpread({}, state), {}, {
+          error: true
+        })
+      } : _objectSpread(_objectSpread({}, state), {}, {
+        user: _objectSpread(_objectSpread({}, action.payload.response), {}, {
+          error: false
+        })
       });
+      break;
+
+    case 'GET_OTHER_USERINFO':
+      return action.payload.error ? {
+        otherUser: _objectSpread(_objectSpread({}, state), {}, {
+          error: true
+        })
+      } : _objectSpread(_objectSpread({}, state), {}, {
+        otherUser: _objectSpread(_objectSpread({}, action.payload.response), {}, {
+          error: false
+        })
+      });
+      break;
 
     default:
       return state;

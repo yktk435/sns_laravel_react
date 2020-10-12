@@ -4,9 +4,8 @@ import Login from '../components/login';
 import * as actions from '../actions/login';
 
 const mapStateToProps = (state, ownProps) => ({
-    userName: state.Login.userName,
-    pass: state.Login.pass,
-    error: state.Login.error
+    userName: '',
+    
 });
 
 const mapDispatchToProps = dispatch => ({

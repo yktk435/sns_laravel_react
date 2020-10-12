@@ -22,7 +22,9 @@ Route::get('/', function(){
 });
 Route::get('/{any}', function(){
     return view('index');
-})->where('any', '[^(images)].*'); //補足：.*は、正規表現で0文字以上の任意の文字列を意味する
+})->where('any', '[^(images)(test)].*'); //補足：.*は、正規表現で0文字以上の任意の文字列を意味する
 
 Route::get('/images/{file}','ImageController@getImage');
+Route::resource('/test','RestTestController2');
+
 

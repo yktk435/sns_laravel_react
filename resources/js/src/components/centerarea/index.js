@@ -6,7 +6,7 @@ import Notification from './notification/notification'
 import Dm from './dm/dm'
 import Profile from '../../containers/profile'
 import Setting from './setting/setting'
-import OtherUserPage from './profile/otherUserPage'
+import OtherUserPage from '../../containers/otherUserPage'
 
 
 class CenterArea extends React.Component {

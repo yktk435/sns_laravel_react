@@ -17,6 +17,7 @@ class CreateMembersTable extends Migration
             $table->increments('id');
             $table->dateTime('created_at');
             $table->string('name');
+            $table->string('user_id');
             $table->string('password');
             $table->string('email');
             $table->string('icon');    

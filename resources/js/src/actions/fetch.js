@@ -1,6 +1,7 @@
 // src/actions/Ranking.js
 import fetchJsonp from 'fetch-jsonp';
 import qs from 'qs';
+import { replace } from 'react-router-redux'; 
 
 
 const API_URL = 'http://localhost:8000/api/test';
@@ -22,6 +23,11 @@ const finishRequest = response => ({
 
 const getUserInfoAction = (response, error) => ({
   type: 'GET_USERINFO',
+  payload: { response, error },
+});
+
+const getOtherUserInfoAction = (response, error) => ({
+  type: 'GET_PTHER_USERINFO',
   payload: { response, error },
 });
 
@@ -57,11 +63,32 @@ export const getUserInfo = () => {
   return async (dispatch, getState) => {
       
       // ログインしていなければloginにリダイレクトの処理を書く
+    // クッキーを見てアクセストークンがなかったらログイン画面にリダイレクト
+    // if (クッキーがなかったら) {
+    //   dispatch(replace('/login'));
+    //   return;
+    // }
       
       try {
           const responce = await fetch('http://localhost:8000/api/test');
           const data = await responce.json();
           dispatch(getUserInfoAction(data, null, )); 
+      } catch (err) {
+          // dispatch(receiveData(null, err)); 
+      }
+  };
+};
+
+export const getOtherUserInfo = () => {
+  // getState関数でstate.shopping.categoriesにアクセスする
+  return async (dispatch, getState) => {
+      
+      // ログインしていなければloginにリダイレクトの処理を書く
+      
+      try {
+          const responce = await fetch('http://localhost:8000/api/test');
+          const data = await responce.json();
+          dispatch(getOtherUserInfoAction(data, null, )); 
       } catch (err) {
           // dispatch(receiveData(null, err)); 
       }
