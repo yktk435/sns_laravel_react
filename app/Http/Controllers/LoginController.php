@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Member;
+use App\Token;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class LoginController extends Controller
 {
@@ -39,17 +42,33 @@ class LoginController extends Controller
         $data = $request->all();
         $userId = $data['userId'];
         $pass = $data['pass'];
+        $accessToken = Str::random(60);
 
-        $member = Member::where('user_id', $userId)->first();
+        $memberTable = Member::where('user_id', $userId)->first();
         $pass = Member::where('password', $pass)->first();
-        if ($member == null || $pass==null) return 'a';
-        $member = $member->toArray();
+
+
+        if ($memberTable == null || $pass == null) return 'a';
+        $member = $memberTable->toArray();
+        
+        $tokenTable = Token::where('member_id', $member['id']);
+        if ($tokenTable != null) {
+
+            DB::table('tokens')->where('member_id',$member['id'])->update(["access_token" => $accessToken]);
+        } else {
+            DB::table('tokens')->insert([
+                "member_id" => $member['id'],
+                'created_at' => date("Y-m-d H:i:s"),
+                "access_token" => $accessToken
+            ]);
+        }
 
         $array = [
             "userName" => $member['name'],
             "userId" => $member['user_id'],
             "iconUrl" => $member['icon'],
-            "postImageUrl" => $member['header'],
+            "headerUrl" => $member['header'],
+            "accessToken" => $accessToken,
         ];
         return $array;
     }
