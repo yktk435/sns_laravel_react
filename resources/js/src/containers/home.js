@@ -2,14 +2,19 @@
 import { connect } from 'react-redux';
 import Home from '../components/centerarea/home/home'
 import * as actions from '../actions/fetch'
-import * as postAction from '../actions/post'
+import * as home from '../actions/home'
 
 const mapStateToProps = (state, ownProps) => {
   return (
     {
-      ...state.getUserInfo,
-      requestData: state.postInfo,
-      text: state.postInfo.text,
+      userName: state.userInfo.userName,
+      userId: state.userInfo.userId,
+      iconUrl: state.userInfo.iconUrl,
+      headerUrl: state.userInfo.headerUrl,
+      accessToken: state.userInfo.accessToken,
+      error: false,
+      requestData: {text:state.home.text},
+      text: state.home.text,
     }
   )
 };
@@ -21,10 +26,10 @@ const mapDispatchToProps = dispatch => ({
     dispatch(actions.post(requestData));
   },
   inputPostText(text) {
-    dispatch(postAction.inputPostText(text))
+    dispatch(home.inputPostText(text))
   },
   clearTextBox() {
-    dispatch(postAction.clearTextBox())
+    dispatch(home.clearTextBox())
   }
 });
 

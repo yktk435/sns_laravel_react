@@ -1,7 +1,11 @@
 // 初期状態
 const initialState = {
-    text: '',
-    response: undefined,
+    // ホーム画面で投稿するときの投稿するデータの形
+    requestData: {
+        text: ''
+    },
+    text:'',
+    response: '',
     error: false
 };
 

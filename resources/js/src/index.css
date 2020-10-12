@@ -40,6 +40,9 @@ body{
   text-decoration: none;
 }
 
+.blue-hover:hover{
+  -webkit-filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);
+}
 
 /********************/
 
@@ -116,7 +119,9 @@ body{
   filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);
 }
 
-
+.spreaded-icon-a{
+  height: 36px;
+}
 
 
 /* 新規アクションのアイコン系 終わり */
@@ -526,6 +531,30 @@ button.btn {
     object-fit: cover;
     object-position: 20% 45%;
     border: 5px solid rgb(20, 29, 38);
+}
+
+/* 投稿、返信、写真、グッドの装飾 */
+.profile-item{
+  padding: 15px 0;
+  float:left;width: calc(100%/2);
+  font-weight: bold;
+  border-bottom: 3px solid rgb(48, 60, 67);
+}
+
+/* 投稿の下のボタン */
+.rep-button{
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.rep-button:hover{
+  background-color: rgba(90, 230, 255, 0.068);
+}
+.post-button{
+  width:calc(100%/2) ;
+  border-bottom:1px solid rgb(48, 60, 67);
 }
 /****************************************************************/
 

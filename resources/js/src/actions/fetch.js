@@ -20,6 +20,11 @@ const finishRequest = response => ({
   payload: { response },
 });
 
+const getUserInfoAction = (response, error) => ({
+  type: 'GET_USERINFO',
+  payload: { response, error },
+});
+
 
 export const post = (requestData) => {
   console.log('JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ')
@@ -43,5 +48,22 @@ export const post = (requestData) => {
     } catch (err) {
       dispatch(receiveData(err));
     }
+  };
+};
+
+
+export const getUserInfo = () => {
+  // getState関数でstate.shopping.categoriesにアクセスする
+  return async (dispatch, getState) => {
+      
+      // ログインしていなければloginにリダイレクトの処理を書く
+      
+      try {
+          const responce = await fetch('http://localhost:8000/api/test');
+          const data = await responce.json();
+          dispatch(getUserInfoAction(data, null, )); 
+      } catch (err) {
+          // dispatch(receiveData(null, err)); 
+      }
   };
 };

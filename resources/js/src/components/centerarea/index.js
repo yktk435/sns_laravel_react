@@ -4,8 +4,9 @@ import Home from '../../containers/home'
 // import { Switch, Route, Redirect } from 'react-router-dom';
 import Notification from './notification/notification'
 import Dm from './dm/dm'
-import Profile from './profile/profile'
+import Profile from '../../containers/profile'
 import Setting from './setting/setting'
+import OtherUserPage from './profile/otherUserPage'
 
 
 class CenterArea extends React.Component {
@@ -28,6 +29,7 @@ class CenterArea extends React.Component {
                     <Route path="/dm" component={Dm} />
                     <Route path="/profile" component={Profile} />
                     <Route path="/setting" component={Setting} />
+                    <Route path="/user/:userId" component={OtherUserPage} />
                     <Route
                         path="/"
                         render={() => <Redirect to="/home" />}

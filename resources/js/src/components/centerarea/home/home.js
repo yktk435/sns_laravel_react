@@ -16,7 +16,7 @@ class Home extends React.Component {
         let PostedUserInfo = {
             userName: this.props.userName,
             userImageUrl: "./src/work/image/user.jpg",
-            userId: "testuser",
+            userId: this.props.userId,
             createdAt: "202x年x月x日",
             postImageUrl: "./src/work/image/user.jpg",
 
@@ -36,7 +36,7 @@ class Home extends React.Component {
                     <div style={{ float: "left" }} aria-label="ユーザアイコン">
                         <div style={{ margin: "5px" }}>
                             <a className="" href="" aria-label="ユーザアイコン">
-                                <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={this.props.userImageUrl} alt="ユーザアイコン" />
+                                <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={this.props.iconUrl} alt="ユーザアイコン" />
                             </a>
                         </div>
                     </div>

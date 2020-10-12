@@ -1,27 +1,27 @@
-// src/reducers/Ranking.js
-
-
-
-// 初期状態
 const initialState = {
     userName: undefined,
     userId: undefined,
-    userImageUrl: undefined,
-    // errorオブジェクト格納用でresponseを用意
-    response:undefined,
+    iconUrl: undefined,
+    headerUrl: undefined,
+    accessToken: undefined,
+    response: undefined,
     error: false
 };
 
+
 export default (state = initialState, action) => {
-    
-    
+
+
     switch (action.type) {
         case 'GET_USERINFO':
             return action.payload.error
                 ? { ...state, error: true }
                 : {
-                    ...state,
-                    ...action.payload
+                    // 通信エラーエラーがないなら
+                    // API側のキーにの撮ってすべて展開
+                    ...action.payload.response,
+                    error: false,
+                    
                 };
 
         default:

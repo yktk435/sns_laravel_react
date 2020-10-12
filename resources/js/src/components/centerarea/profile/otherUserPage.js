@@ -7,7 +7,7 @@ import good from '../../images/good.png'
 import heart from '../../images/heart.png'
 import rep from '../../images/rep.png'
 import retweet from '../../images/retweet.png'
-class Profile extends React.Component {
+class OtherUserPage extends React.Component {
     render() {
         const { userName, userId, iconUrl, headerUrl, postObj } = this.props
         // console.log('============================================================================',postObj)
@@ -185,4 +185,4 @@ const OtherPost = (props) => {
     )
 }
 
-export default Profile
+export default OtherUserPage

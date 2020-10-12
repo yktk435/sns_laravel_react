@@ -13,13 +13,38 @@ class RestTestController extends Controller
      */
     public function index(Request $request)
     {
+        $env = "http://localhost:8000/images/";
+        $postOvj = [
+            [
+                "userName" => "ポスト",
+                "userId" => "postuserId",
+                "iconUrl" => $env . "taro.png",
+                "postImageUrl"=>$env . "taro2.jpg",
+                "content"=>"投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
+            ],
+            [
+                "userName" => "ポスト",
+                "userId" => "postuserId",
+                "iconUrl" => $env . "taro.png",
+                "postImageUrl"=>$env . "taro2.jpg",
+                "content"=>"投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
+            ],
+            [
+                "userName" => "ポスト",
+                "userId" => "postuserId",
+                "iconUrl" => $env . "taro.png",
+                "postImageUrl"=>$env . "taro2.jpg",
+                "content"=>"投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
+            ],
+        ];
 
-        $env="http://localhost:8000/images/";
+        
         $data = [
-            "userName" => "userName",
+            "userName" => "ユーザ名",
             "userId" => "userId",
-            "iconUrl" => $env."user.jpg",
-            "headerUrl"=>$env."user_header.jpg",
+            "iconUrl" => $env . "user.jpg",
+            "headerUrl" => $env . "user_header.jpg",
+            "postObj"=>$postOvj,
         ];
         return json_encode($data);
     }
