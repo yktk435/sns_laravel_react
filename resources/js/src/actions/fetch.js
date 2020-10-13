@@ -43,31 +43,71 @@ const logoutAction = () => ({
   type: 'LOGOUT',
   
 })
-export const post = (requestData) => {
-  console.log('JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ')
-  console.log(requestData)
+
+const receivePostData = (responce,error) => ({
+  type: 'RECEIVE_POST_DATA',
+  payload: {
+    responce,
+    error
+  }
+})
+
+const receiveArticles = (responce,error) => ({
+  type: 'RECEIVE_ARTICLES',
+  payload: {
+    responce,
+    error
+  }
+})
+
+/**********************************************/ 
+// 記事関係
+/**********************************************/ 
+export const post = (requestData,token) => {
   return async (dispatch, getState) => {
+    const option = {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json',
+        'access_token': token,
+        'X-CSRF-TOKEN': '5xFoCpfLihSVCf6gU8mY0Ko1n0HVYHbclMQFPSXj',
+    },
+      body: JSON.stringify(requestData)
+    }
     // dispatch(startRequest(category)); // categoryIdからcategoryに変更
     try {
-      const response = await fetch(API_URL, {
-        method: 'post',
-        headers: {
-          'Content-Type': 'applicaxtion/json',
-          // 'X-CSRF-TOKEN': '5xFoCpfLihSVCf6gU8mY0Ko1n0HVYHbclMQFPSXj',
-        },
-        body: JSON.stringify(requestData)
-      });
-      const data = await response.json();
-      console.log('===================================================')
-      console.log("res", response)
-      console.log("data", data)
-      dispatch(receiveData(data, null));
+      const responce = await fetch('http://localhost:8000/api/article', option);
+      const data = await responce.json();
+
+      if('error' in data)throw data      
+      dispatch(receivePostData(data, null));
     } catch (err) {
-      dispatch(receiveData(err));
+      dispatch(receivePostData(null,err));
     }
   };
 };
 
+export const getArticles = (token) => {
+  return async (dispatch, getState) => {
+    const option = {
+      headers: {
+        'access_token': token,
+        // 'X-CSRF-TOKEN': '5xFoCpfLihSVCf6gU8mY0Ko1n0HVYHbclMQFPSXj',
+      },
+    }
+    try {
+      const responce = await fetch('http://localhost:8000/api/article', option);
+      const data = await responce.json();
+      if('error' in data)throw data      
+      dispatch(receiveArticles(data, null));
+    } catch (err) {
+      dispatch(receiveArticles(null,err));
+    }
+  }
+}
+/**********************************************/ 
+// ユーザ情報取得
+/**********************************************/ 
 
 export const getUserInfo = () => {
   // getState関数でstate.shopping.categoriesにアクセスする
@@ -157,7 +197,7 @@ export const startLoginWithToken = (token) => {
       const data = await responce.json();
       
       if('error' in data)throw data
-      dispatch(replace('/home'))
+      // dispatch(replace('/home'))
       dispatch(getUserInfoAction(data, null,));
       document.cookie='access_token='+data.accessToken
       
@@ -169,10 +209,25 @@ export const startLoginWithToken = (token) => {
   };
 }
 
+
 export const logout = () => {
   return (dispatch, getState) => { 
     document.cookie='access_token=;'
     dispatch(logoutAction())
     dispatch(replace('/login'))
   }
+}
+
+/*****************************/ 
+// 関数
+/*****************************/
+const getAccesstoken=()=>{
+  let token;
+  document.cookie.split(';').forEach(item => {
+    token = item.match(/access_token=(.*)/)
+  })
+  
+  console.log('cookie',token[1])
+  return token[1]
+  
 }

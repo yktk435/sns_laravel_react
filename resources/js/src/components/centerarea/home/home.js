@@ -10,9 +10,6 @@ class Home extends React.Component {
     render() {
         
         
-        let userInfo = {
-            userImageUrl: "./src/work/image/user.jpg"
-        }
         let PostedUserInfo = {
             userName: this.props.userName,
             userImageUrl: "./src/work/image/user.jpg",
@@ -49,7 +46,7 @@ class Home extends React.Component {
                             </a>
                             <a onClick={() => {
                                 
-                                this.props.post(this.props.requestData)
+                                this.props.post(this.props.requestData,this.props.accessToken)
                                 this.props.clearTextBox()
                             }} style={{ margin: "0 5px", }} className="btn btn--orange btn--radius" aria-label="投稿ボタン">投稿</a>
                         </div>

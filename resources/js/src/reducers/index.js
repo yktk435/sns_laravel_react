@@ -9,5 +9,5 @@ export { default as leftarea } from './leftarea'
 // ログイン
 export { default as login } from './login'
 
-
-
+// 記事
+export { default as articles } from './articles'

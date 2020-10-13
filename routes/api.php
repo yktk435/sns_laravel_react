@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Middleware\LoginCheckMiddleware;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,7 +23,7 @@ Route::group(['middleware' => ['api']], function () {
 });
 
 Route::group(['middleware' => ['api']], function () {
-    Route::resource('/article', 'RestArticleController');
+    Route::resource('/article', 'RestArticleController')->middleware(LoginCheckMiddleware::class);
 });
 // ログイン用
 Route::group(['middleware' => ['api']], function () {

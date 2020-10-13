@@ -20,10 +20,8 @@ const mapStateToProps = (state, ownProps) => {
 };
 const mapDispatchToProps = dispatch => ({
 
-  post(requestData) {
-    console.log('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF')
-    console.log(requestData)
-    dispatch(actions.post(requestData));
+  post(requestData,token) {
+    dispatch(actions.post(requestData,token));
   },
   inputPostText(text) {
     dispatch(home.inputPostText(text))

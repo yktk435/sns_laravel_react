@@ -15,8 +15,17 @@ class RestTestController2 extends Controller
      */
     public function index(Request $request)
     {
-        // dd($request->all());
-
+        $memberId=1;
+        $userInfo=Member::find($memberId)->toArray();
+        
+        $articles=Member::find($memberId)->articles->toArray();
+        foreach($articles as &$article){
+            $article['user_id']=$userInfo['user_id'];
+            $article['icon']=$userInfo['icon'];
+            $article['header']=$userInfo['header'];
+            $article['name']=$userInfo['name'];
+        }
+        dd($articles);
     
         
     }

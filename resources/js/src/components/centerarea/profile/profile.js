@@ -8,9 +8,14 @@ import heart from '../../images/heart.png'
 import rep from '../../images/rep.png'
 import retweet from '../../images/retweet.png'
 class Profile extends React.Component {
+    componentWillMount() {
+        this.props.getArticles(this.props.accessToken)
+    }
     render() {
-        const { userName, userId, iconUrl, headerUrl, postObj } = this.props
-        // console.log('============================================================================',postObj)
+        const { userName, userId, iconUrl, headerUrl, postObj, articles } = this.props
+
+        console.log('============================================================================', postObj)
+        console.log(articles)
 
         return (
             <div className="main-container" style={{ overflow: "auto" }}>
@@ -66,7 +71,7 @@ class Profile extends React.Component {
                     } else {
                         return (
                             <div>
-                                {postObj.map(post => (<OtherPost {...post} />))}
+                                {postObj.map(post => (<UserPost {...post} />))}
                             </div>
                         )
 
@@ -77,7 +82,7 @@ class Profile extends React.Component {
                 {(() => {
                     switch (this.props.menuMode) {
                         case "post":
-                            return (<PostArea postObj={postObj} />)
+                            return (<PostArea articles={articles} />)
                             break;
                         case "rep":
                             break;
@@ -94,19 +99,24 @@ class Profile extends React.Component {
         )
     }
 }
+
 const PostArea = (props) => {
-    if (typeof props.postObj === 'undefined') {
+    
+    if (typeof props.articles === 'undefined') {
         return (<p>読込中</p>)
     } else {
         return (
             <div>
-                {props.postObj.map(post => (<OtherPost {...post} />))}
+                {props.articles.map(article => {if(article.id!=undefined)return (<UserPost {...article}/>)
+                })}
             </div>
         )
     }
 }
-const OtherPost = (props) => {
 
+const UserPost = (props) => {
+    const { id, created_at, content, user_id, name, header, icon } = props
+    console.log(id,created_at,content,user_id,name,header ,icon)
     return (
         <div>
             <div style={{ padding: "10px 15px", display: "inline-flex", height: "auto", width: "560px" }} className="post-screen">
@@ -115,7 +125,7 @@ const OtherPost = (props) => {
                 <div style={{ marginRight: "10px" }} aria-label="ユーザアイコン">
                     <div style={{ margin: "5px" }}>
                         <a className="" href="" aria-label="ユーザアイコン">
-                            <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={props.iconUrl} alt="ユーザアイコン" />
+                            <img style={{ width: "50px", height: "50px", borderRadius: "50%" }} className="" src={icon} alt="ユーザアイコン" />
                         </a>
                     </div>
                 </div>
@@ -125,24 +135,24 @@ const OtherPost = (props) => {
                     {/* <!-- ユーザ名 --> */}
                     <div>
                         <div style={{ float: "left", marginLeft: "5px" }}>
-                            <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }} href="">{props.userName}</a>
+                            <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }} href="">{name}</a>
                         </div>
                         <div style={{ float: "left", margin: "0 15px" }}>
-                            <Link to={"/user/"+props.userId} style={{textDecoration:"none"}}><a style={{ textDecoration: "none", color: " rgb(115, 129, 136)" }} href="">@{props.userId}</a></Link>
+                            <Link to={"/user/" + user_id} style={{ textDecoration: "none" }}><a style={{ textDecoration: "none", color: " rgb(115, 129, 136)" }} href="">@{user_id}</a></Link>
                         </div>
-                        <div style={{ color: "rgb(115, 129, 136)", marginLeft: "15px" }}>{props.createdAt}</div>
+                        <div style={{ color: "rgb(115, 129, 136)", marginLeft: "15px" }}>{created_at}</div>
                     </div>
                     {/* <!-- 投稿内容 --> */}
                     <div>
 
-                        <div className="font" style={{ padding: "5px 0", paddingRight: "50px", display: "inline-block" }} aria-label="投稿した文字を表示">投稿文字ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</div>
+                        <div className="font" style={{ padding: "5px 0", paddingRight: "50px", display: "inline-block" }} aria-label="投稿した文字を表示">{content}</div>
                         {(() => {
                             // 写真があれば表示
-                            if (typeof props.postImageUrl !== 'undefined') {
+                            if (typeof header !== 'undefined') {
                                 return (
                                     <div style={{ padding: "5px 0" }} aria-label="投稿した写真を表示">
                                         <a href="" >
-                                            <img src={props.postImageUrl} alt="投稿した写真を表示" style={{ width: "90%", borderRadius: "5%" }} />
+                                            <img src={header} alt="投稿した写真を表示" style={{ width: "90%", borderRadius: "5%" }} />
                                         </a>
                                     </div>
                                 )
@@ -184,5 +194,4 @@ const OtherPost = (props) => {
 
     )
 }
-
 export default Profile

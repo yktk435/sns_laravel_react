@@ -1,7 +1,7 @@
 // src/containers/Ranking.js
 import { connect } from 'react-redux';
 import Profile from '../components/centerarea/profile/profile'
-import * as actions from '../actions/fetch'
+import * as fetch from '../actions/fetch'
 import * as profile from '../actions/profile'
 
 const mapStateToProps = (state, ownProps) => {
@@ -16,18 +16,23 @@ const mapStateToProps = (state, ownProps) => {
             // 投稿、返信、写真、グッドのどれを見ているか
             menuMode:state.profile.menuMode,
             // 投稿
-            postObj: state.userInfo.user.postObj,
+            articles: state.articles.user,
             // 返信
             // 写真
             picObj:state.profile.picObj,
             // ぐっと
-            goodObj:state.profile.goodObj,
+            goodObj: state.profile.goodObj,
+            // 記事系
+            articles:state.articles.user
         }
     )
 };
 const mapDispatchToProps = dispatch => ({
     clickMenuItem(e) {
         dispatch(profile.clickMenuItem(e))
+    },
+    getArticles(token) {
+        dispatch(fetch.getArticles(token))
     }
 })
 

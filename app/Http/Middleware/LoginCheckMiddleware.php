@@ -17,9 +17,11 @@ class LoginCheckMiddleware
      */
     public function handle($request, Closure $next)
     {
-        $csrfToken = $request->header('x-csrf-token');
-        // $accessToken = $request->header('access_token');
-        $accessToken = "qwertyuiopasdfghjkl";
+        
+        $csrfToken = $request->header('X-CSRF-TOKEN');
+        $accessToken = $request->header('access_token');
+        
+        // $accessToken = "qwertyuiopasdfghjkl";
         $tokens = [
             "csrfToke" => $csrfToken,
             "access_token" => $accessToken
@@ -28,9 +30,16 @@ class LoginCheckMiddleware
         $accountExist=Token::where('access_token',$accessToken)->first();
         if ($tokens["access_token"] == null || $accountExist==null) {
             // アクセストークンがないもしくはアクセストークンが違うからログインへリダイレクト
-            return redirect('/login');
+            // return redirect('/login');
+            return response([
+                "error"=>"DBアクセストークンがないもしくはヘッダにアクセストークンがない",
+                "access_token"=>$tokens['access_token'],
+                "accountExist"=>$accountExist,
+                "memberId"=>$request,
+                "ベアラー"=>$request->bearerToken()
+                ]);
         }
-        $request->merge(["laravelData" => ["member_id"=>$accountExist->toArray()['member_id']]]);
+        $request->merge(["member_id" =>$accountExist->toArray()['member_id']]);
         // print_r (json_encode($tokens));
         return $next($request);
     }
