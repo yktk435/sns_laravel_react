@@ -16,7 +16,7 @@ import cathand2 from '../images/cathand2.png'
 class LeftArea extends React.Component {
     componentWillMount() {
         this.props.windowSizeChange(window.innerWidth)
-        
+
         this.props.clickMenuItem(this.props.path);
 
     }
@@ -44,6 +44,7 @@ class LeftArea extends React.Component {
                                 </div>
                             </a>
                         </div>
+                        <LogoutIcon logout={this.props.logout} userName={this.props.userInfo.user.userName} userId={this.props.userInfo.user.userId} iconUrl={this.props.userInfo.user.iconUrl} clickMenuItem={this.props.clickMenuItem} displayString={this.props.displayString} classNameString={this.props.classNameString} />
                     </div>
 
                 </div>
@@ -55,20 +56,32 @@ class LeftArea extends React.Component {
 const IconParts = (props) => {
     // console.log(props)
     return (
-        <div className={props.classNameString}>
+        <div className={props.classNameString} >
             <Link id={props.to} class="link-mark" to={props.to}><a className="spreaded-icon-a" style={props.styleObj} onClick={(e) => {
 
                 props.clickMenuItem(e.target.closest(".link-mark").id)
                 console.log(e.target.closest(".link-mark").id)
             }}>
-                <React.Fragment>
-                    <div style={{ float: "left" }}>
-                        <img className="img-size" src={props.image} alt={props.alt} />
-                    </div>
-                    <div className="icon-discription spreaded-icon-name" style={{ display: props.displayString }}>{props.innerstr}</div>
-                </React.Fragment>
+                <div style={{ float: "left" }}>
+                    <img className="img-size" src={props.image} alt={props.alt} />
+                </div>
+                <div className="icon-discription spreaded-icon-name" style={{ display: props.displayString }}>{props.innerstr}</div>
             </a></Link>
 
+        </div>
+    )
+}
+
+const LogoutIcon = (props) => {
+    return (
+        <div class={props.classNameString} style={{ position: "relative" }}  onClick={()=>props.logout()}>
+            <a class="logout">
+                <div style={{ float: "left" }}>
+                    <img class="img-size" src={props.iconUrl} alt="ユーザ名" />
+                </div>
+                <div class="icon-discription spreaded-icon-name" style={{ display: props.displayString, fontSize: "15px" }}>{props.userName}</div>
+                <div class="icon-discription spreaded-icon-name" style={{ display: props.displayString, fontSize: "15px", color: "rgb(136, 153, 166)" }}>{props.userId}</div>
+            </a>
         </div>
     )
 }

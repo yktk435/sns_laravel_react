@@ -2,7 +2,7 @@
 const initialState = {
     // categoryId: undefined,
     // categoryIdからcategoryに変更
-    userName: '',
+    userId: '',
     pass: '',
     error: false
 };
@@ -13,7 +13,7 @@ export default (state = initialState, action) => {
         case 'INPUT_USERNAME':
             return {
                 ...state,
-                userName: action.payload.userName,                
+                userId: action.payload.userId,                
             };
 
         case 'INPUT_PASS':
@@ -21,8 +21,11 @@ export default (state = initialState, action) => {
                 ...state,
                 pass: action.payload.pass,                
             }
-        case 'PUSH_LOGIN_BUTTON':
-            return state
+        case 'LOGIN_ERROR':
+            return {
+                ...state,
+                errorObj:action.payload.errorObj
+            }
 
         default:
             return state;

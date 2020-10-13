@@ -2,21 +2,23 @@
 import { connect } from 'react-redux';
 import Login from '../components/login';
 import * as actions from '../actions/login';
+import * as fetch from '../actions/fetch';
 
 const mapStateToProps = (state, ownProps) => ({
-    userName: '',
-    
+    userId: state.login.userId,
+    pass: state.login.pass,
+    error:state.userInfo.user.error
 });
 
 const mapDispatchToProps = dispatch => ({
-    inputUserName(userName) {
-        dispatch(actions.inputUserName(userName))
+    inputUserName(userId) {
+        dispatch(actions.inputUserName(userId))
     },
     inputPass(pass) {
         dispatch(actions.inputPass(pass))
     },
-    pushLoginButton(error) {
-        dispatch(actions.pushLoginButton(error))
+    startLogin(ipassData) {
+        dispatch(fetch.startLogin(ipassData))
     }
 });
 

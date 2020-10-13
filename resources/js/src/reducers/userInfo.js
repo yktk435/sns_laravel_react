@@ -6,7 +6,8 @@ const initialState = {
         headerUrl: undefined,
         accessToken: undefined,
         response: undefined,
-        error: false
+        error: false,
+        auth: false,
     },
     otherUser: {
         userName: undefined,
@@ -26,8 +27,12 @@ export default (state = initialState, action) => {
 
     switch (action.type) {
         case 'GET_USERINFO':
+            console.log(action.payload)
             return action.payload.error
-                ? { user: { ...state, error: true } }
+                ? {
+                    ...state,
+                    user: { error: true, auth: false }
+                }
                 : {
                     // 通信エラーエラーがないなら
                     // API側のキーにの撮ってすべて展開
@@ -35,12 +40,16 @@ export default (state = initialState, action) => {
                     user: {
                         ...action.payload.response,
                         error: false,
+                        auth: true,
                     },
                 };
             break;
         case 'GET_OTHER_USERINFO':
             return action.payload.error
-                ? { otherUser: { ...state, error: true } }
+                ? {
+                    ...state,
+                    otherUser: { error: true }
+                }
                 : {
                     // 通信エラーエラーがないなら
                     // API側のキーにの撮ってすべて展開
@@ -50,6 +59,33 @@ export default (state = initialState, action) => {
                         error: false,
                     },
                 };
+            break;
+        case 'LOGIN_ERROR':
+            return {
+                ...state,
+                user: {
+                    ...state.user,
+                    errorObj:action.payload.errorObj,
+                    error: true
+                }
+            }
+            break;
+        case 'LOGIN_ERROR_EITH_TOKEN':
+            return {
+                ...state,
+                user: {
+                    ...state.user,
+                    errorObj:action.payload.errorObj,
+                    
+                }
+            }
+            break;
+        case 'LOGOUT':
+            return {
+                user: {
+                auth:false   
+                }
+            }
             break;
         default:
             return state;

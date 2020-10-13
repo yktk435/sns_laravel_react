@@ -6,6 +6,8 @@ export { default as userInfo } from './userInfo'
 export { default as home } from './home'
 export { default as profile } from './profile'
 export { default as leftarea } from './leftarea'
+// ログイン
+export { default as login } from './login'
 
 
 

@@ -11,11 +11,28 @@ import './index.css'
 class App extends Component {
   componentWillMount() {
 
-    this.props.getUserInfo()
+    // this.props.getUserInfo()
+
+    let token;
+    document.cookie.split(';').forEach(item => {
+      token = item.match(/access_token=(.*)/)
+
+    })
+    
+    if (token == null) { 
+      // クッキーにアクセストークンがないならログインにリダイレクト
+      
+    } else {
+      // クッキーにアクセストークンがあるならそれを使ってログイン
+      token = token[1];  
+      console.log(token)
+      // dispatch
+      this.props.startLoginWithToken(token)
+    }
   }
 
   render() {
-    this.comp=(
+    this.comp = (
       <div>
         {/* アイコン系(左側) */}
         <LeftArea />
@@ -25,9 +42,17 @@ class App extends Component {
         <RightArea />
       </div>
     )
-    // 認証していなかったら
-    if(0)this.comp=<Login/>
-    return this.comp
+    if(!this.props.userInfo.user.auth)this.comp=<Login/>
+    return (
+<div>   {this.comp}</div>
+     
+      
+
+      // <Switch>
+      //   <Route path="/login" exact component={Login} />
+      //   {this.comp}
+      // </Switch>
+    )
   };
 }
 

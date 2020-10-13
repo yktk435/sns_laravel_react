@@ -6,14 +6,18 @@ import * as fetches from '../actions/fetch';
 
 
 const mapStateToProps = (state, ownProps) => ({
-    ...state
+  ...state,
+  
 });
 
 const mapDispatchToProps = dispatch => {
   return ({
     getUserInfo () {
     dispatch(fetches.getUserInfo());
-  },
+    },
+    startLoginWithToken (token) {
+      dispatch(fetches.startLoginWithToken(token));
+    },
 })};
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

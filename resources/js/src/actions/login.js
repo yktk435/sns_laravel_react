@@ -1,7 +1,7 @@
-export const inputUserName = (userName) => ({
+export const inputUserName = (userId) => ({
     type: 'INPUT_USERNAME',
     payload: {
-        userName
+        userId
     }
 })
 export const inputPass = (pass) => ({
@@ -17,3 +17,4 @@ export const pushLoginButton = (error) => ({
         error,
     }
 })
+

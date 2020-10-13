@@ -6832,7 +6832,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "html {\n  background-color: rgb(20, 29, 38);\n  color: white;\n  padding: 0px;\n}\n\nbody{\n  /* background-color: red; */\n}\n/********************/\n\n\n/* 共有 */\n\n\n/********************/\n\n.font {\n  font-size: 15px;\n}\n\n.a-to-block {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n.block-to-center {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n.a-to-block2 {\n  display: block;\n  width: 100%;\n  height: 100%;\n  color: white;\n  text-decoration: none;\n}\n\n.blue-hover:hover{\n  -webkit-filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n/********************/\n\n\n/* 共有ここまで */\n\n\n/********************/\n\n.border {\n  border: 1px solid rgb(48, 60, 67);\n}\n\n.parent {\n  margin: 0 auto;\n  height: 100%;\n  width: 100%;\n}\n\n.left {\n  /* background-color: rgb(0, 15, 219); */\n  background-color: rgb(20, 29, 38);\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: 800px;\n  width: 70px;\n  margin: 0px;\n  padding: 0px;\n}\n\n.center {\n  /* background-color: orange; */\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: auto;\n  width: 560px ;\n  margin: 0px;\n  padding: 0px;\n  ;\n}\n\n.right {\n  /* background-color: red; */\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: 800px;\n  width: 0px;\n  margin: 0px;\n  padding: 0px;\n}\n\n\n/************************************************/\n\n\n/* アイコン系 */\n\n\n/* header */\n\n\n/************************************************/\n\n\n/* 新規アクションのアイコン系 */\n\n.new-action {\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.spreaded-icon-a{\n  height: 36px;\n}\n\n\n/* 新規アクションのアイコン系 終わり */\n\n.image-icon {\n  width: 30px;\n  height: 30px;\n  /* filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%) */\n}\n\ndiv.left>a {\n  display: block;\n}\n\n.div-outside-image {\n  width: 70px;\n  height: 70px;\n  margin: 10px auto;\n}\n\n.if-spread {\n  width: 50px;\n  height: 50px;\n  margin: 10px 0px 10px 30px;\n}\n\n\n\n.site-image-icon {\n  width: 40px;\n  height: 40px;\n}\n\n.site-image {\n  margin-top: 20px;\n  margin-bottom: 40px;\n}\n\n.post-icon {\n  background-color:rgb(64, 169, 255);\n}\n\n.post-icon:hover {\n  background: #3790da;\n}\n\n\n\n.outer {\n  border-radius: 100px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 13px 20px;\n}\n\n\n/* .icon-discription {\n  font-weight: 900;\n  position: absolute;\n  left: 100px;\n  font-size: larger;\n} */\n\n.icon-to-center-for-a {\n  display: block;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  border-radius: 50%;\n}\n\n.icon-to-center-for-a:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.icon-to-center-for-img {\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: auto;\n}\n\n\n/* すべて展開したときの動作 */\n\n.if-spreaded {\n  display: inline-flex;\n  margin: 5px 20px;\n}\n\n.spreaded-icon-a {\n  color: white;\n  text-decoration: none;\n  display: block;\n  /* background-color: red; */\n  border-radius: 100px;\n  padding: 8px 15px;\n}\n\n.spreaded-icon-a:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.img-size {\n  width: 30px;\n}\n\n.spreaded-icon-name {\n  float: left;\n  margin-left: 20px;\n  margin-right: 10px;\n  font-size: 20px;\n  font-weight: bold;\n}\n\n\n/************************************************/\n\n\n/* ライムライン系 */\n\n\n/************************************************/\n\n\n/* ホーム */\n\n.menu-name-parent {\n  /* background-color: red; */\n  height: 50px;\n  border-bottom: 2px solid rgb(48, 60, 67);\n  /* border-top: 2px solid rgb(48, 60, 67); */\n  position: relative;\n}\n\n.menu-name {\n  font-size: larger;\n  font-weight: bold;\n  position: absolute;\n  top: 50%;\n  transform: translate(30%, -50%);\n}\n\n\n/* 投稿画面 */\n\n.post-screen {\n  height: 150px;\n}\n\n\n/* --- INPUT=TEXTの標準デザイン設定 ---------------------*/\n\n.text-area {\n  display: block;\n  /* width: 90%; */\n  /* 入力域の最大幅 */\n  background: transparent;\n  /* 入力域の背景色 */\n  border-bottom: 1px solid rgb(48, 60, 67);\n  /* 入力域の枠線   */\n  border-radius: 4px;\n  /* 入力域の角丸   */\n  padding: 8px;\n  /* 入力文字の余白 */\n  font-size: 16px;\n  /* 入力文字サイズ */\n  color: white;\n  /* 入力文字の色   */\n  font-weight: bold;\n  /* 入力文字の太字 */\n  letter-spacing: .1em;\n  /* 入力文字の間隔 */\n  line-height: 19px;\n  /* 入力文字の間隔 */\n  overflow: scroll;\n  /* margin: 5px auto; */\n}\n\n\n/* --- 入力フィールドにフォーカスか来たら ----------------*/\n\n.text-area:focus {\n  /* border-color: white; */\n  /* 枠線色     */\n  background-color: transparent;\n  /* 背景色     */\n  outline: 0;\n}\n\n\n/* --- 入力説明の文字(標準) -----------------------------*/\n\n.text-area:-moz-placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.text-area:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.text-area:placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/\n\n.text-area::-webkit-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(IE用) -----------------------------*/\n\n.text-area:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* ユーザアイコン */\n\n\n/* 投稿ボタン */\n\n.btn--orange,\na.btn--orange {\n  color: #fff;\n  background-color: rgb(64, 169, 255);\n}\n\n.btn--orange:hover,\na.btn--orange:hover {\n  color: #fff;\n  background: rgb(55, 144, 218);\n}\n\na.btn--radius {\n  border-radius: 100vh;\n}\n\n.btn,\na.btn,\nbutton.btn {\n  font-size: large;\n  font-weight: 700;\n  /* line-height: 1.5; */\n  position: relative;\n  display: inline-block;\n  padding: 3px 30px;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  transition: all 0.3s;\n  text-align: center;\n  vertical-align: middle;\n  text-decoration: none;\n  letter-spacing: 0.1em;\n  color: #fff;\n  border-radius: 0.5rem;\n  margin: 0 0 0 auto;\n}\n\n\n/************************/\n\n\n/* 右側 */\n\n\n/************************/\n\n\n/* 検索バー*/\n\n\n/* --- INPUT=TEXTの標準デザイン設定 ---------------------*/\n\n.search-bar {\n  display: block;\n  width: 80%;\n  height: 20px;\n  background-color: transparent;\n  border: 0px;\n  display: block;\n  /* width: 90%; */\n  /* 入力域の最大幅 */\n  background: transparent;\n  /* 入力域の背景色 */\n  border: 0px;\n  /* 入力域の枠線   */\n  /* border-radius: 4px; */\n  /* 入力域の角丸   */\n  padding: 10px 0;\n  /* 入力文字の余白 */\n  font-size: 16px;\n  /* 入力文字サイズ */\n  color: white;\n  /* 入力文字の色   */\n  font-weight: bold;\n  /* 入力文字の太字 */\n  letter-spacing: .1em;\n  /* 入力文字の間隔 */\n  line-height: 19px;\n  /* 入力文字の間隔 */\n  overflow: scroll;\n  /* margin: 5px auto; */\n}\n\n\n/* --- 入力フィールドにフォーカスか来たら ----------------*/\n\n.search-bar:focus {\n  /* border: 1px solid white; */\n  /* 枠線色     */\n  background-color: transparent;\n  /* 背景色     */\n  outline: 0;\n}\n\n.search-icon .search-bar:focus {\n  width: 100px;\n  /* border: 1px solid white; */\n}\n\n\n/* --- 入力説明の文字(標準) -----------------------------*/\n\n.search-bar:-moz-placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.search-bar:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.search-bar:placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/\n\n.search-bar::-webkit-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(IE用) -----------------------------*/\n\n.search-bar:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/****************************************************************/\n\n\n/* 通知 */\n\n\n/****************************************************************/\n\n.notification-button-rep:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n.notification-button-all:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n.blue-when-hover:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n\n/****************************************************************/\n\n\n/* プロフィール */\n\n\n/****************************************************************/\n\n.edit-prof:hover {\n  background-color: rgba(86, 86, 255, 0.123);\n}\n.header-image{\n  width: 100%;\n    height: 200px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -o-object-position: 0% 28%;\n       object-position: 0% 28%;\n}\n.user-image-a{\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 1%;\n  transform: translate(0, -50%);\n}\n.user-image-image-tag{\n  width: 140px;\n    border-radius: 50%;\n    height: 140px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -o-object-position: 20% 45%;\n       object-position: 20% 45%;\n    border: 5px solid rgb(20, 29, 38);\n}\n\n/* 投稿、返信、写真、グッドの装飾 */\n.profile-item{\n  padding: 15px 0;\n  float:left;width: calc(100%/2);\n  font-weight: bold;\n  border-bottom: 3px solid rgb(48, 60, 67);\n}\n\n/* 投稿の下のボタン */\n.rep-button{\n  position: relative;\n  border-radius: 50%;\n  width: 40px;\n  height: 40px;\n  margin-bottom: 5px;\n}\n.rep-button:hover{\n  background-color: rgba(90, 230, 255, 0.068);\n}\n.post-button{\n  width:calc(100%/2) ;\n  border-bottom:1px solid rgb(48, 60, 67);\n}\n/****************************************************************/\n\n\n/* 設定 */\n\n\n/****************************************************************/\n\n.setting-outer {\n  height: auto;\n  position: relative;\n  padding: 10px 15px;\n  border-bottom: 1px solid rgb(56, 68, 77);\n}\n\n.setting-menu-inner {\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  font-size: 20px;\n  font-weight: bold;\n}\n\n.setting-inner {\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  font-size: 15px;\n}\n\n.right-icon {\n  width: 13px;\n}\n\n.setting-name-hover:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n}\n\n\n/* ユーザ画像を丸くする */\n.radi50{\n  border-radius: 50%;\n}", ""]);
+exports.push([module.i, "html {\n  background-color: rgb(20, 29, 38);\n  color: white;\n  padding: 0px;\n}\n\nbody{\n  /* background-color: red; */\n}\n/********************/\n\n\n/* 共有 */\n\n\n/********************/\n\n.font {\n  font-size: 15px;\n}\n\n.a-to-block {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n.block-to-center {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n.a-to-block2 {\n  display: block;\n  width: 100%;\n  height: 100%;\n  color: white;\n  text-decoration: none;\n}\n\n.blue-hover:hover{\n  -webkit-filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n/********************/\n\n\n/* 共有ここまで */\n\n\n/********************/\n\n.border {\n  border: 1px solid rgb(48, 60, 67);\n}\n\n.parent {\n  margin: 0 auto;\n  height: 100%;\n  width: 100%;\n}\n\n.left {\n  /* background-color: rgb(0, 15, 219); */\n  background-color: rgb(20, 29, 38);\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: 800px;\n  width: 70px;\n  margin: 0px;\n  padding: 0px;\n}\n\n.center {\n  /* background-color: orange; */\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: auto;\n  width: 560px ;\n  margin: 0px;\n  padding: 0px;\n  ;\n}\n\n.right {\n  /* background-color: red; */\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: 800px;\n  width: 0px;\n  margin: 0px;\n  padding: 0px;\n}\n\n\n/************************************************/\n\n\n/* アイコン系 */\n\n\n/* header */\n\n\n/************************************************/\n\n\n/* 新規アクションのアイコン系 */\n\n.new-action {\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.spreaded-icon-a{\n  height: 36px;\n}\n\n\n/* 新規アクションのアイコン系 終わり */\n\n.image-icon {\n  width: 30px;\n  height: 30px;\n  /* filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%) */\n}\n\ndiv.left>a {\n  display: block;\n}\n\n.div-outside-image {\n  width: 70px;\n  height: 70px;\n  margin: 10px auto;\n}\n\n.if-spread {\n  width: 50px;\n  height: 50px;\n  margin: 10px 0px 10px 30px;\n}\n\n\n\n.site-image-icon {\n  width: 40px;\n  height: 40px;\n}\n\n.site-image {\n  margin-top: 20px;\n  margin-bottom: 40px;\n}\n\n.post-icon {\n  background-color:rgb(64, 169, 255);\n}\n\n.post-icon:hover {\n  background: #3790da;\n}\n\n\n\n.outer {\n  border-radius: 100px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 13px 20px;\n}\n\n\n/* .icon-discription {\n  font-weight: 900;\n  position: absolute;\n  left: 100px;\n  font-size: larger;\n} */\n\n.icon-to-center-for-a {\n  display: block;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  border-radius: 50%;\n}\n\n.icon-to-center-for-a:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.icon-to-center-for-img {\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: auto;\n}\n\n\n/* すべて展開したときの動作 */\n\n.if-spreaded {\n  display: inline-flex;\n  margin: 5px 20px;\n}\n\n.spreaded-icon-a {\n  color: white;\n  text-decoration: none;\n  display: block;\n  /* background-color: red; */\n  border-radius: 100px;\n  padding: 8px 15px;\n}\n\n.spreaded-icon-a:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.img-size {\n  width: 30px;\n}\n\n.spreaded-icon-name {\n  float: left;\n  margin-left: 20px;\n  margin-right: 10px;\n  font-size: 20px;\n  font-weight: bold;\n}\n\n\n/************************************************/\n\n\n/* ライムライン系 */\n\n\n/************************************************/\n\n\n/* ホーム */\n\n.menu-name-parent {\n  /* background-color: red; */\n  height: 50px;\n  border-bottom: 2px solid rgb(48, 60, 67);\n  /* border-top: 2px solid rgb(48, 60, 67); */\n  position: relative;\n}\n\n.menu-name {\n  font-size: larger;\n  font-weight: bold;\n  position: absolute;\n  top: 50%;\n  transform: translate(30%, -50%);\n}\n\n\n/* 投稿画面 */\n\n.post-screen {\n  height: 150px;\n}\n\n\n/* --- INPUT=TEXTの標準デザイン設定 ---------------------*/\n\n.text-area {\n  display: block;\n  /* width: 90%; */\n  /* 入力域の最大幅 */\n  background: transparent;\n  /* 入力域の背景色 */\n  border-bottom: 1px solid rgb(48, 60, 67);\n  /* 入力域の枠線   */\n  border-radius: 4px;\n  /* 入力域の角丸   */\n  padding: 8px;\n  /* 入力文字の余白 */\n  font-size: 16px;\n  /* 入力文字サイズ */\n  color: white;\n  /* 入力文字の色   */\n  font-weight: bold;\n  /* 入力文字の太字 */\n  letter-spacing: .1em;\n  /* 入力文字の間隔 */\n  line-height: 19px;\n  /* 入力文字の間隔 */\n  overflow: scroll;\n  /* margin: 5px auto; */\n}\n\n\n/* --- 入力フィールドにフォーカスか来たら ----------------*/\n\n.text-area:focus {\n  /* border-color: white; */\n  /* 枠線色     */\n  background-color: transparent;\n  /* 背景色     */\n  outline: 0;\n}\n\n\n/* --- 入力説明の文字(標準) -----------------------------*/\n\n.text-area:-moz-placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.text-area:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.text-area:placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/\n\n.text-area::-webkit-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(IE用) -----------------------------*/\n\n.text-area:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* ユーザアイコン */\n\n\n/* 投稿ボタン */\n\n.btn--orange,\na.btn--orange {\n  color: #fff;\n  background-color: rgb(64, 169, 255);\n}\n\n.btn--orange:hover,\na.btn--orange:hover {\n  color: #fff;\n  background: rgb(55, 144, 218);\n}\n\na.btn--radius {\n  border-radius: 100vh;\n}\n\n.btn,\na.btn,\nbutton.btn {\n  font-size: large;\n  font-weight: 700;\n  /* line-height: 1.5; */\n  position: relative;\n  display: inline-block;\n  padding: 3px 30px;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  transition: all 0.3s;\n  text-align: center;\n  vertical-align: middle;\n  text-decoration: none;\n  letter-spacing: 0.1em;\n  color: #fff;\n  border-radius: 0.5rem;\n  margin: 0 0 0 auto;\n}\n\n\n/************************/\n\n\n/* 右側 */\n\n\n/************************/\n\n\n/* 検索バー*/\n\n\n/* --- INPUT=TEXTの標準デザイン設定 ---------------------*/\n\n.search-bar {\n  display: block;\n  width: 80%;\n  height: 20px;\n  background-color: transparent;\n  border: 0px;\n  display: block;\n  /* width: 90%; */\n  /* 入力域の最大幅 */\n  background: transparent;\n  /* 入力域の背景色 */\n  border: 0px;\n  /* 入力域の枠線   */\n  /* border-radius: 4px; */\n  /* 入力域の角丸   */\n  padding: 10px 0;\n  /* 入力文字の余白 */\n  font-size: 16px;\n  /* 入力文字サイズ */\n  color: white;\n  /* 入力文字の色   */\n  font-weight: bold;\n  /* 入力文字の太字 */\n  letter-spacing: .1em;\n  /* 入力文字の間隔 */\n  line-height: 19px;\n  /* 入力文字の間隔 */\n  overflow: scroll;\n  /* margin: 5px auto; */\n}\n\n\n/* --- 入力フィールドにフォーカスか来たら ----------------*/\n\n.search-bar:focus {\n  /* border: 1px solid white; */\n  /* 枠線色     */\n  background-color: transparent;\n  /* 背景色     */\n  outline: 0;\n}\n\n.search-icon .search-bar:focus {\n  width: 100px;\n  /* border: 1px solid white; */\n}\n\n\n/* --- 入力説明の文字(標準) -----------------------------*/\n\n.search-bar:-moz-placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.search-bar:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.search-bar:placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/\n\n.search-bar::-webkit-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(IE用) -----------------------------*/\n\n.search-bar:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/****************************************************************/\n\n\n/* 通知 */\n\n\n/****************************************************************/\n\n.notification-button-rep:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n.notification-button-all:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n.blue-when-hover:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n\n/****************************************************************/\n\n\n/* プロフィール */\n\n\n/****************************************************************/\n\n.edit-prof:hover {\n  background-color: rgba(86, 86, 255, 0.123);\n}\n.header-image{\n  width: 100%;\n    height: 200px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -o-object-position: 0% 28%;\n       object-position: 0% 28%;\n}\n.user-image-a{\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 1%;\n  transform: translate(0, -50%);\n}\n.user-image-image-tag{\n  width: 140px;\n    border-radius: 50%;\n    height: 140px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -o-object-position: 20% 45%;\n       object-position: 20% 45%;\n    border: 5px solid rgb(20, 29, 38);\n}\n\n/* 投稿、返信、写真、グッドの装飾 */\n.profile-item{\n  padding: 15px 0;\n  float:left;width: calc(100%/2);\n  font-weight: bold;\n  border-bottom: 3px solid rgb(48, 60, 67);\n}\n\n/* 投稿の下のボタン */\n.rep-button{\n  position: relative;\n  border-radius: 50%;\n  width: 40px;\n  height: 40px;\n  margin-bottom: 5px;\n}\n.rep-button:hover{\n  background-color: rgba(90, 230, 255, 0.068);\n}\n.post-button{\n  width:calc(100%/2) ;\n  border-bottom:1px solid rgb(48, 60, 67);\n}\n/****************************************************************/\n\n\n/* 設定 */\n\n\n/****************************************************************/\n\n.setting-outer {\n  height: auto;\n  position: relative;\n  padding: 10px 15px;\n  border-bottom: 1px solid rgb(56, 68, 77);\n}\n\n.setting-menu-inner {\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  font-size: 20px;\n  font-weight: bold;\n}\n\n.setting-inner {\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  font-size: 15px;\n}\n\n.right-icon {\n  width: 13px;\n}\n\n.setting-name-hover:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n}\n\n\n/* ユーザ画像を丸くする */\n.radi50{\n  border-radius: 50%;\n}\n\n/****************************************************************/\n\n\n/* ログアウト */\n\n\n/****************************************************************/\n.logout{\n  padding: 10px;\n  border-radius: 9999px;\n}\n.logout:hover{\n  \n  background-color: rgba(90, 230, 255, 0.068);\n}\n\n", ""]);
 
 // exports
 
@@ -77012,15 +77012,31 @@ var App = /*#__PURE__*/function (_Component) {
   _createClass(App, [{
     key: "componentWillMount",
     value: function componentWillMount() {
-      this.props.getUserInfo();
+      // this.props.getUserInfo()
+      var token;
+      document.cookie.split(';').forEach(function (item) {
+        token = item.match(/access_token=(.*)/);
+      });
+
+      if (token == null) {// クッキーにアクセストークンがないならログインにリダイレクト
+      } else {
+        // クッキーにアクセストークンがあるならそれを使ってログイン
+        token = token[1];
+        console.log(token); // dispatch
+
+        this.props.startLoginWithToken(token);
+      }
     }
   }, {
     key: "render",
     value: function render() {
-      this.comp = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_leftarea__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_centerarea__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_rightarea__WEBPACK_IMPORTED_MODULE_2__["default"], null)); // 認証していなかったら
-
-      if (0) {}
-      return this.comp;
+      this.comp = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_leftarea__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_centerarea__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_rightarea__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      if (!this.props.userInfo.user.auth) this.comp = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_login__WEBPACK_IMPORTED_MODULE_4__["default"], null);
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "   ", this.comp) // <Switch>
+      //   <Route path="/login" exact component={Login} />
+      //   {this.comp}
+      // </Switch>
+      ;
     }
   }]);
 
@@ -77035,7 +77051,7 @@ var App = /*#__PURE__*/function (_Component) {
 /*!*******************************************!*\
   !*** ./resources/js/src/actions/fetch.js ***!
   \*******************************************/
-/*! exports provided: post, getUserInfo, getOtherUserInfo */
+/*! exports provided: post, getUserInfo, getOtherUserInfo, startLogin, startLoginWithToken, logout */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77043,6 +77059,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "post", function() { return post; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUserInfo", function() { return getUserInfo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOtherUserInfo", function() { return getOtherUserInfo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startLogin", function() { return startLogin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startLoginWithToken", function() { return startLoginWithToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var fetch_jsonp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fetch-jsonp */ "../../node_modules/fetch-jsonp/build/fetch-jsonp.js");
@@ -77050,6 +77069,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! qs */ "./node_modules/qs/lib/index.js");
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(qs__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-redux */ "./node_modules/react-router-redux/es/index.js");
+/* harmony import */ var _containers_login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../containers/login */ "./resources/js/src/containers/login.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -77057,6 +77077,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 // src/actions/Ranking.js
+
 
 
 
@@ -77103,11 +77124,37 @@ var getUserInfoAction = function getUserInfoAction(response, error) {
 
 var getOtherUserInfoAction = function getOtherUserInfoAction(response, error) {
   return {
-    type: 'GET_PTHER_USERINFO',
+    type: 'GET_OTHER_USERINFO',
     payload: {
       response: response,
       error: error
     }
+  };
+};
+
+var loginError = function loginError(errorObj, error) {
+  return {
+    type: 'LOGIN_ERROR',
+    payload: {
+      errorObj: errorObj,
+      error: error
+    }
+  };
+};
+
+var loginErrorWithToken = function loginErrorWithToken(errorObj, error) {
+  return {
+    type: 'LOGIN_ERROR_EITH_TOKEN',
+    payload: {
+      errorObj: errorObj,
+      error: error
+    }
+  };
+};
+
+var logoutAction = function logoutAction() {
+  return {
+    type: 'LOGOUT'
   };
 };
 
@@ -77246,6 +77293,147 @@ var getOtherUserInfo = function getOtherUserInfo() {
     };
   }();
 };
+var startLogin = function startLogin(ipassData) {
+  return /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(dispatch, getState) {
+      var option, responce, data;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
+        while (1) {
+          switch (_context4.prev = _context4.next) {
+            case 0:
+              option = {
+                method: 'post',
+                headers: {
+                  'Content-Type': 'applicaxtion/json' // 'X-CSRF-TOKEN': '5xFoCpfLihSVCf6gU8mY0Ko1n0HVYHbclMQFPSXj',
+
+                },
+                body: JSON.stringify(ipassData)
+              }; // ログインしていなければloginにリダイレクトの処理を書く
+
+              _context4.prev = 1;
+              _context4.next = 4;
+              return fetch('http://localhost:8000/api/login', option);
+
+            case 4:
+              responce = _context4.sent;
+              _context4.next = 7;
+              return responce.json();
+
+            case 7:
+              data = _context4.sent;
+              _context4.t0 = console;
+              _context4.next = 11;
+              return data;
+
+            case 11:
+              _context4.t1 = _context4.sent;
+
+              _context4.t0.log.call(_context4.t0, _context4.t1);
+
+              if (!('error' in data)) {
+                _context4.next = 15;
+                break;
+              }
+
+              throw data;
+
+            case 15:
+              dispatch(Object(react_router_redux__WEBPACK_IMPORTED_MODULE_3__["replace"])('/home'));
+              dispatch(getUserInfoAction(data, null));
+              document.cookie = 'access_token=' + data.accessToken;
+              _context4.next = 26;
+              break;
+
+            case 20:
+              _context4.prev = 20;
+              _context4.t2 = _context4["catch"](1);
+              console.log('error  error  error  error  error  error  error');
+              console.log(_context4.t2);
+              dispatch(loginError(_context4.t2));
+              dispatch(Object(react_router_redux__WEBPACK_IMPORTED_MODULE_3__["replace"])('/login'));
+
+            case 26:
+            case "end":
+              return _context4.stop();
+          }
+        }
+      }, _callee4, null, [[1, 20]]);
+    }));
+
+    return function (_x7, _x8) {
+      return _ref4.apply(this, arguments);
+    };
+  }();
+}; // アクセストークンを持っているならそれでログイン
+
+var startLoginWithToken = function startLoginWithToken(token) {
+  return /*#__PURE__*/function () {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5(dispatch, getState) {
+      var option, responce, data;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
+        while (1) {
+          switch (_context5.prev = _context5.next) {
+            case 0:
+              option = {
+                method: 'get',
+                headers: {
+                  'access_token': token // 'X-CSRF-TOKEN': '5xFoCpfLihSVCf6gU8mY0Ko1n0HVYHbclMQFPSXj',
+
+                }
+              }; // ログインしていなければloginにリダイレクトの処理を書く
+
+              _context5.prev = 1;
+              _context5.next = 4;
+              return fetch('http://localhost:8000/api/login', option);
+
+            case 4:
+              responce = _context5.sent;
+              _context5.next = 7;
+              return responce.json();
+
+            case 7:
+              data = _context5.sent;
+
+              if (!('error' in data)) {
+                _context5.next = 10;
+                break;
+              }
+
+              throw data;
+
+            case 10:
+              dispatch(Object(react_router_redux__WEBPACK_IMPORTED_MODULE_3__["replace"])('/home'));
+              dispatch(getUserInfoAction(data, null));
+              document.cookie = 'access_token=' + data.accessToken;
+              _context5.next = 19;
+              break;
+
+            case 15:
+              _context5.prev = 15;
+              _context5.t0 = _context5["catch"](1);
+              dispatch(loginErrorWithToken(_context5.t0));
+              dispatch(Object(react_router_redux__WEBPACK_IMPORTED_MODULE_3__["replace"])('/login'));
+
+            case 19:
+            case "end":
+              return _context5.stop();
+          }
+        }
+      }, _callee5, null, [[1, 15]]);
+    }));
+
+    return function (_x9, _x10) {
+      return _ref5.apply(this, arguments);
+    };
+  }();
+};
+var logout = function logout() {
+  return function (dispatch, getState) {
+    document.cookie = 'access_token=;';
+    dispatch(logoutAction());
+    dispatch(Object(react_router_redux__WEBPACK_IMPORTED_MODULE_3__["replace"])('/login'));
+  };
+};
 
 /***/ }),
 
@@ -77339,11 +77527,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "inputUserName", function() { return inputUserName; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "inputPass", function() { return inputPass; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pushLoginButton", function() { return pushLoginButton; });
-var inputUserName = function inputUserName(userName) {
+var inputUserName = function inputUserName(userId) {
   return {
     type: 'INPUT_USERNAME',
     payload: {
-      userName: userName
+      userId: userId
     }
   };
 };
@@ -77859,7 +78047,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _notification_notification__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./notification/notification */ "./resources/js/src/components/centerarea/notification/notification.js");
 /* harmony import */ var _dm_dm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dm/dm */ "./resources/js/src/components/centerarea/dm/dm.js");
 /* harmony import */ var _containers_profile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../containers/profile */ "./resources/js/src/containers/profile.js");
-/* harmony import */ var _setting_setting__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./setting/setting */ "./resources/js/src/components/centerarea/setting/setting.js");
+/* harmony import */ var _containers_setting__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../containers/setting */ "./resources/js/src/containers/setting.js");
 /* harmony import */ var _containers_otherUserPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../containers/otherUserPage */ "./resources/js/src/containers/otherUserPage.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -77935,7 +78123,7 @@ var CenterArea = /*#__PURE__*/function (_React$Component) {
         component: _containers_profile__WEBPACK_IMPORTED_MODULE_5__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/setting",
-        component: _setting_setting__WEBPACK_IMPORTED_MODULE_6__["default"]
+        component: _containers_setting__WEBPACK_IMPORTED_MODULE_6__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/user/:userId",
         component: _containers_otherUserPage__WEBPACK_IMPORTED_MODULE_7__["default"]
@@ -78971,6 +79159,7 @@ var Setting = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var userId = this.props.userId;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "main-container",
         style: {
@@ -78983,7 +79172,7 @@ var Setting = /*#__PURE__*/function (_React$Component) {
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         "class": "setting-menu-inner"
-      }, "@\u30E6\u30FC\u30B6ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CenterItem, {
+      }, "@", userId)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CenterItem, {
         itemName: "\u30A2\u30AB\u30A6\u30F3\u30C8",
         imageUrl: _images_right_png__WEBPACK_IMPORTED_MODULE_1___default.a
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CenterItem, {
@@ -79537,7 +79726,15 @@ var LeftArea = /*#__PURE__*/function (_React$Component) {
         "class": "image-icon",
         src: _images_cathand2_png__WEBPACK_IMPORTED_MODULE_10___default.a,
         alt: "\u6295\u7A3F\u958B\u59CB\u30DC\u30BF\u30F3"
-      })))))));
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoutIcon, {
+        logout: this.props.logout,
+        userName: this.props.userInfo.user.userName,
+        userId: this.props.userInfo.user.userId,
+        iconUrl: this.props.userInfo.user.iconUrl,
+        clickMenuItem: this.props.clickMenuItem,
+        displayString: this.props.displayString,
+        classNameString: this.props.classNameString
+      }))));
     }
   }]);
 
@@ -79559,7 +79756,7 @@ var IconParts = function IconParts(props) {
       props.clickMenuItem(e.target.closest(".link-mark").id);
       console.log(e.target.closest(".link-mark").id);
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       "float": "left"
     }
@@ -79572,7 +79769,42 @@ var IconParts = function IconParts(props) {
     style: {
       display: props.displayString
     }
-  }, props.innerstr)))));
+  }, props.innerstr))));
+};
+
+var LogoutIcon = function LogoutIcon(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": props.classNameString,
+    style: {
+      position: "relative"
+    },
+    onClick: function onClick() {
+      return props.logout();
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    "class": "logout"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      "float": "left"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    "class": "img-size",
+    src: props.iconUrl,
+    alt: "\u30E6\u30FC\u30B6\u540D"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "icon-discription spreaded-icon-name",
+    style: {
+      display: props.displayString,
+      fontSize: "15px"
+    }
+  }, props.userName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "icon-discription spreaded-icon-name",
+    style: {
+      display: props.displayString,
+      fontSize: "15px",
+      color: "rgb(136, 153, 166)"
+    }
+  }, props.userId)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LeftArea);
@@ -79598,9 +79830,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Login = function Login(props) {
+  console.log('==============================');
+  console.log(props);
   var inputUserName = props.inputUserName,
       inputPass = props.inputPass,
-      pushLoginButton = props.pushLoginButton;
+      startLogin = props.startLogin,
+      userId = props.userId,
+      pass = props.pass;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       padding: "10px"
@@ -79693,15 +79929,15 @@ var Login = function Login(props) {
     style: {
       marginBottom: "20px"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "home",
-    style: {
-      textDecoration: "none"
-    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    onClick: pushLoginButton,
+    onClick: function onClick() {
+      // console.log('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+      startLogin({
+        userId: userId,
+        pass: pass
+      });
+    },
     className: "a-to-block2 btn--orange",
-    href: "",
     style: {
       borderRadius: "30px",
       height: "50px",
@@ -79713,7 +79949,15 @@ var Login = function Login(props) {
     style: {
       padding: "10px"
     }
-  }, "\u30ED\u30B0\u30A4\u30F3")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "\u30ED\u30B0\u30A4\u30F3"))), function () {
+    if (props.error) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          color: "red"
+        }
+      }, "\u30E6\u30FC\u30B6\u30FC\u540D\u304B\u30D1\u30B9\u30EF\u30FC\u30C9\u304C\u9593\u9055\u3063\u3066\u307E\u3059");
+    }
+  }(), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "passwasureta",
     style: {
       textDecoration: "none"
@@ -80179,6 +80423,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     getUserInfo: function getUserInfo() {
       dispatch(_actions_fetch__WEBPACK_IMPORTED_MODULE_2__["getUserInfo"]());
+    },
+    startLoginWithToken: function startLoginWithToken(token) {
+      dispatch(_actions_fetch__WEBPACK_IMPORTED_MODULE_2__["startLoginWithToken"](token));
     }
   };
 };
@@ -80304,20 +80551,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_leftarera__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/leftarera */ "./resources/js/src/components/leftarera/index.js");
 /* harmony import */ var _actions_windowSizeChange__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../actions/windowSizeChange */ "./resources/js/src/actions/windowSizeChange.js");
 /* harmony import */ var _actions_leftarea__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../actions/leftarea */ "./resources/js/src/actions/leftarea.js");
+/* harmony import */ var _actions_fetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../actions/fetch */ "./resources/js/src/actions/fetch.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // src/containers/Ranking.js
 
 
 
 
 
+
 var mapStateToProps = function mapStateToProps(state, ownProps) {
-  return {
+  return _objectSpread(_objectSpread({}, state), {}, {
     path: state.router.location.pathname.replace('/', ''),
     leftAreaWidth: state.windowSizeChange.leftAreaWidth.leftAreaWidth,
     classNameString: state.windowSizeChange.leftAreaWidth.classNameString,
     displayString: state.windowSizeChange.leftAreaWidth.displayString,
     style: state.leftarea.style
-  };
+  });
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
@@ -80327,6 +80582,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
     },
     clickMenuItem: function clickMenuItem(e) {
       dispatch(_actions_leftarea__WEBPACK_IMPORTED_MODULE_3__["clickMenuItem"](e));
+    },
+    logout: function logout() {
+      dispatch(_actions_fetch__WEBPACK_IMPORTED_MODULE_4__["logout"]());
     }
   };
 };
@@ -80347,27 +80605,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _components_login__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/login */ "./resources/js/src/components/login.js");
 /* harmony import */ var _actions_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../actions/login */ "./resources/js/src/actions/login.js");
+/* harmony import */ var _actions_fetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../actions/fetch */ "./resources/js/src/actions/fetch.js");
 // src/containers/Ranking.js
+
 
 
 
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    userName: ''
+    userId: state.login.userId,
+    pass: state.login.pass,
+    error: state.userInfo.user.error
   };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
-    inputUserName: function inputUserName(userName) {
-      dispatch(_actions_login__WEBPACK_IMPORTED_MODULE_2__["inputUserName"](userName));
+    inputUserName: function inputUserName(userId) {
+      dispatch(_actions_login__WEBPACK_IMPORTED_MODULE_2__["inputUserName"](userId));
     },
     inputPass: function inputPass(pass) {
       dispatch(_actions_login__WEBPACK_IMPORTED_MODULE_2__["inputPass"](pass));
     },
-    pushLoginButton: function pushLoginButton(error) {
-      dispatch(_actions_login__WEBPACK_IMPORTED_MODULE_2__["pushLoginButton"](error));
+    startLogin: function startLogin(ipassData) {
+      dispatch(_actions_fetch__WEBPACK_IMPORTED_MODULE_3__["startLogin"](ipassData));
     }
   };
 };
@@ -80513,6 +80775,40 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps, mapDispatchToProps)(_components_rightarea__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./resources/js/src/containers/setting.js":
+/*!************************************************!*\
+  !*** ./resources/js/src/containers/setting.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _components_centerarea_setting_setting__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/centerarea/setting/setting */ "./resources/js/src/components/centerarea/setting/setting.js");
+/* harmony import */ var _actions_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../actions/fetch */ "./resources/js/src/actions/fetch.js");
+/* harmony import */ var _actions_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../actions/home */ "./resources/js/src/actions/home.js");
+// src/containers/Ranking.js
+
+
+
+
+
+var mapStateToProps = function mapStateToProps(state, ownProps) {
+  return {
+    userName: state.userInfo.user.userName,
+    userId: state.userInfo.user.userId,
+    iconUrl: state.userInfo.user.iconUrl,
+    headerUrl: state.userInfo.user.headerUrl,
+    accessToken: state.userInfo.user.accessToken,
+    error: false
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps)(_components_centerarea_setting_setting__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
 /***/ }),
 
@@ -80719,7 +81015,7 @@ var initialState = {
 /*!********************************************!*\
   !*** ./resources/js/src/reducers/index.js ***!
   \********************************************/
-/*! exports provided: windowSizeChange, fetch, userInfo, home, profile, leftarea */
+/*! exports provided: windowSizeChange, fetch, userInfo, home, profile, leftarea, login */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80742,11 +81038,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _leftarea__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./leftarea */ "./resources/js/src/reducers/leftarea.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "leftarea", function() { return _leftarea__WEBPACK_IMPORTED_MODULE_5__["default"]; });
 
+/* harmony import */ var _login__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./login */ "./resources/js/src/reducers/login.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "login", function() { return _login__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
 
 
  // コンポーネント系
 
 
+
+ // ログイン
 
 
 
@@ -80785,6 +81086,57 @@ var initialState = {
       return {
         style: _objectSpread({}, action.payload.style)
       };
+
+    default:
+      return state;
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/src/reducers/login.js":
+/*!********************************************!*\
+  !*** ./resources/js/src/reducers/login.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// 初期状態
+var initialState = {
+  // categoryId: undefined,
+  // categoryIdからcategoryに変更
+  userId: '',
+  pass: '',
+  error: false
+};
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    // リクエスト開始時に状態をリセット
+    case 'INPUT_USERNAME':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        userId: action.payload.userId
+      });
+
+    case 'INPUT_PASS':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        pass: action.payload.pass
+      });
+
+    case 'LOGIN_ERROR':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        errorObj: action.payload.errorObj
+      });
 
     default:
       return state;
@@ -80859,7 +81211,8 @@ var initialState = {
     headerUrl: undefined,
     accessToken: undefined,
     response: undefined,
-    error: false
+    error: false,
+    auth: false
   },
   otherUser: {
     userName: undefined,
@@ -80877,27 +81230,55 @@ var initialState = {
 
   switch (action.type) {
     case 'GET_USERINFO':
-      return action.payload.error ? {
-        user: _objectSpread(_objectSpread({}, state), {}, {
-          error: true
-        })
-      } : _objectSpread(_objectSpread({}, state), {}, {
+      console.log(action.payload);
+      return action.payload.error ? _objectSpread(_objectSpread({}, state), {}, {
+        user: {
+          error: true,
+          auth: false
+        }
+      }) : _objectSpread(_objectSpread({}, state), {}, {
         user: _objectSpread(_objectSpread({}, action.payload.response), {}, {
-          error: false
+          error: false,
+          auth: true
         })
       });
       break;
 
     case 'GET_OTHER_USERINFO':
-      return action.payload.error ? {
-        otherUser: _objectSpread(_objectSpread({}, state), {}, {
+      return action.payload.error ? _objectSpread(_objectSpread({}, state), {}, {
+        otherUser: {
           error: true
-        })
-      } : _objectSpread(_objectSpread({}, state), {}, {
+        }
+      }) : _objectSpread(_objectSpread({}, state), {}, {
         otherUser: _objectSpread(_objectSpread({}, action.payload.response), {}, {
           error: false
         })
       });
+      break;
+
+    case 'LOGIN_ERROR':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        user: _objectSpread(_objectSpread({}, state.user), {}, {
+          errorObj: action.payload.errorObj,
+          error: true
+        })
+      });
+      break;
+
+    case 'LOGIN_ERROR_EITH_TOKEN':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        user: _objectSpread(_objectSpread({}, state.user), {}, {
+          errorObj: action.payload.errorObj
+        })
+      });
+      break;
+
+    case 'LOGOUT':
+      return {
+        user: {
+          auth: false
+        }
+      };
       break;
 
     default:

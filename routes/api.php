@@ -25,6 +25,7 @@ Route::group(['middleware' => ['api']], function () {
 Route::group(['middleware' => ['api']], function () {
     Route::resource('/article', 'RestArticleController');
 });
+// ログイン用
 Route::group(['middleware' => ['api']], function () {
     Route::resource('/login', 'LoginController');
 });
