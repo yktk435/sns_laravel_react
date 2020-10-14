@@ -115,7 +115,7 @@ const PostArea = (props) => {
 }
 
 const UserPost = (props) => {
-    const { id, created_at, content, user_id, name, header, icon } = props
+    const { id, created_at, content, user_id, name, header, icon ,url} = props
     console.log(id,created_at,content,user_id,name,header ,icon)
     return (
         <div>
@@ -148,11 +148,11 @@ const UserPost = (props) => {
                         <div className="font" style={{ padding: "5px 0", paddingRight: "50px", display: "inline-block" }} aria-label="投稿した文字を表示">{content}</div>
                         {(() => {
                             // 写真があれば表示
-                            if (typeof header !== 'undefined') {
+                            if (url != null) {
                                 return (
                                     <div style={{ padding: "5px 0" }} aria-label="投稿した写真を表示">
                                         <a href="" >
-                                            <img src={header} alt="投稿した写真を表示" style={{ width: "90%", borderRadius: "5%" }} />
+                                            <img src={url} alt="投稿した写真を表示" style={{ width: "90%", borderRadius: "5%" }} />
                                         </a>
                                     </div>
                                 )

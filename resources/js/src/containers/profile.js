@@ -16,14 +16,12 @@ const mapStateToProps = (state, ownProps) => {
             // 投稿、返信、写真、グッドのどれを見ているか
             menuMode:state.profile.menuMode,
             // 投稿
-            articles: state.articles.user,
+            articles:state.articles.user,
             // 返信
             // 写真
             picObj:state.profile.picObj,
             // ぐっと
             goodObj: state.profile.goodObj,
-            // 記事系
-            articles:state.articles.user
         }
     )
 };

@@ -65,14 +65,20 @@ const receiveArticles = (responce,error) => ({
 /**********************************************/ 
 export const post = (requestData,token) => {
   return async (dispatch, getState) => {
+    const imageFile=document.querySelector("#filesend").files[0]
+    
+    console.log(requestData)
+    const formData = new FormData();
+    formData.append('text',requestData.text);
+    formData.append('imageFile',imageFile);
     const option = {
       method: 'post',
       headers: {
-        'Content-Type': 'application/json',
+        // 'Content-Type': 'application/json',
         'access_token': token,
         'X-CSRF-TOKEN': '5xFoCpfLihSVCf6gU8mY0Ko1n0HVYHbclMQFPSXj',
     },
-      body: JSON.stringify(requestData)
+      body: formData
     }
     // dispatch(startRequest(category)); // categoryIdからcategoryに変更
     try {

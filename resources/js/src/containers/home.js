@@ -13,8 +13,13 @@ const mapStateToProps = (state, ownProps) => {
       headerUrl: state.userInfo.user.headerUrl,
       accessToken: state.userInfo.user.accessToken,
       error: false,
-      requestData: {text:state.home.text},
+      requestData: {
+        text: state.home.text,
+        imageFile:state.home.imageFile,
+      },
       text: state.home.text,
+
+      imageUrl:state.home.imageUrl,
     }
   )
 };
@@ -28,6 +33,12 @@ const mapDispatchToProps = dispatch => ({
   },
   clearTextBox() {
     dispatch(home.clearTextBox())
+  },
+  imageChoce(imageUrl) {
+    dispatch(home.imageChoce(imageUrl))
+  },
+  imageClear() {
+    dispatch(home.imageClear())
   }
 });
 

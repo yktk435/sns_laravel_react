@@ -277,7 +277,16 @@ div.left>a {
 .post-screen {
   height: 150px;
 }
-
+#filesend{
+  display: none;
+}
+.send-pic:hover{
+  background-color: rgba(90, 230, 255, 0.068);
+  cursor: pointer;
+}
+.pointer{
+  cursor: pointer;
+}
 
 /* --- INPUT=TEXTの標準デザイン設定 ---------------------*/
 

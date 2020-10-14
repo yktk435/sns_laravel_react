@@ -14,8 +14,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-    console.log('STATE  STATE  STATE  STATE  STATE  STATE  STATE  ')
-    console.log(state)
     switch (action.type) {
         case 'RECEIVE_POST_DATA':
             return action.payload.error
