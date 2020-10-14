@@ -16,24 +16,7 @@ class RestTestController2 extends Controller
      */
     public function index(Request $request)
     {
-        $memberId = 2;
-        $membersTable = Member::find($memberId);
-        
-        
-        $userInfo = $membersTable->toArray();
-        $articles = $membersTable->articles->toArray();
-        
-        $photo = $membersTable;
-
-        foreach ($articles as &$article) {
-            $article['user_id'] = $userInfo['user_id'];
-            $article['icon'] = $userInfo['icon'];
-            $article['header'] = $userInfo['header'];
-            $article['name'] = $userInfo['name'];
-            $article['photo'] = Article::find($article['id'])->photo?Article::find($article['id'])->photo->toArray()['url']:null;
-            
-        }
-        dd($articles);
+        rename('/Users/yokotsukahiroki/work/samurai/lesson/sns/sns_laravel_react/storage/app/images/memberId_1/jPT6PXMN8SsPPq7JgwKB3cTIvvHppTWx2SactCFd.png','/Users/yokotsukahiroki/work/samurai/lesson/sns/sns_laravel_react/public/images');
     }
 
     /**
@@ -54,7 +37,7 @@ class RestTestController2 extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->file('av')->move('kamonohasi','agonaoki');
     }
 
     /**

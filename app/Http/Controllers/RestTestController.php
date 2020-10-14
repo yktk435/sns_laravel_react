@@ -70,19 +70,12 @@ class RestTestController extends Controller
      */
     public function store(Request $request)
     {
-        // $memberId=$request->toArray()['member_id'];
-        $memberId=1;
-        $files = $request->file();
+        // $request->file('av')->move('kamonohasi','agonaoki');
+         $request->file('av')->move('images',$request->file('av')->hashName());
+         
         
-        foreach ($files as $file) {
-            
-            $file->store('images/memberId_'.$memberId);
-            // $url= Storage::disk('local')->path('images/memberId_'.$memberId.'/'.$file->hashName());
-        }
-        return $request;
+        
 
-        
-        
     }
 
     /**

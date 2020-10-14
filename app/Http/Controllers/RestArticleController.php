@@ -28,7 +28,7 @@ class RestArticleController extends Controller
             $article['icon']=$userInfo['icon'];
             $article['header']=$userInfo['header'];
             $article['name']=$userInfo['name'];
-            $article['photo'] = Article::find($article['id'])->photo?Article::find($article['id'])->photo->toArray()['url']:null;
+            $article['url'] = Article::find($article['id'])->photo?Article::find($article['id'])->photo->toArray()['url']:null;
         }
         return $articles;
         
@@ -52,19 +52,23 @@ class RestArticleController extends Controller
      */
     public function store(Request $request)
     {
-        
+        $env = "http://localhost:8000/";
         $memberId=$request['member_id'];
+        $member=Member::find($memberId);
+        $userInfo=$member->toArray();
         $data=$request->all();
         $nextId = DB::table('articles')->max('id') + 1;
         
         $files = $request->file();
 
         foreach ($files as $file) {
-            
-            $file->store('images/memberId_'.$memberId);
-            $url= Storage::disk('local')->path('images/memberId_'.$memberId.'/'.$file->hashName());
-            
+            // $file->store('images/memberId_'.$memberId);
+            $hashName=$file->hashName();
+            $file->move('images/memberId_'.$memberId,$file->hashName(),$hashName);
+            // $url= Storage::disk('local')->path('images/memberId_'.$memberId.'/'.$file->hashName());
+            $url=$env.'images/memberId_'.$memberId.'/'.$hashName;
         }
+        
         $param=[
             // 'id'=>1,
             'created_at'=>date("Y-m-d H:i:s"),
@@ -87,7 +91,7 @@ class RestArticleController extends Controller
         return [
             'id'=>$nextId,
             'member_id'=>$memberId,
-            'created_at'=>date("Y-m-d H:i:s"),
+            'header'=>$userInfo['header'],            
             'content'=>$data['text'],
             'url'=>isset($url)?$url:null
         ];
