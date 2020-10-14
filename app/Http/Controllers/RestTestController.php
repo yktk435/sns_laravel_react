@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
+use Mockery\Undefined;
 
 class RestTestController extends Controller
 {
@@ -19,32 +22,32 @@ class RestTestController extends Controller
                 "userName" => "ポスト",
                 "userId" => "postuserId",
                 "iconUrl" => $env . "taro.png",
-                "postImageUrl"=>$env . "taro2.jpg",
-                "content"=>"投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
+                "postImageUrl" => $env . "taro2.jpg",
+                "content" => "投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
             ],
             [
                 "userName" => "ポスト",
                 "userId" => "postuserId",
                 "iconUrl" => $env . "taro.png",
-                "postImageUrl"=>$env . "taro2.jpg",
-                "content"=>"投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
+                "postImageUrl" => $env . "taro2.jpg",
+                "content" => "投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
             ],
             [
                 "userName" => "ポスト",
                 "userId" => "postuserId",
                 "iconUrl" => $env . "taro.png",
-                "postImageUrl"=>$env . "taro2.jpg",
-                "content"=>"投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
+                "postImageUrl" => $env . "taro2.jpg",
+                "content" => "投稿した文字列投稿した文字列投稿した文字列投稿した文字列投稿した文字列"
             ],
         ];
 
-        
+
         $data = [
             "userName" => "ユーザ名",
             "userId" => "userId",
             "iconUrl" => $env . "user.jpg",
             "headerUrl" => $env . "user_header.jpg",
-            "postObj"=>$postOvj,
+            "postObj" => $postOvj,
         ];
         return json_encode($data);
     }
@@ -67,7 +70,19 @@ class RestTestController extends Controller
      */
     public function store(Request $request)
     {
-        return json_encode($request->all());
+        // $memberId=$request->toArray()['member_id'];
+        $memberId=1;
+        $files = $request->file();
+        
+        foreach ($files as $file) {
+            
+            $file->store('images/memberId_'.$memberId);
+            // $url= Storage::disk('local')->path('images/memberId_'.$memberId.'/'.$file->hashName());
+        }
+        return $request;
+
+        
+        
     }
 
     /**

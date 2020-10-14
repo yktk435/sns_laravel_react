@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use App\Article;
 use App\Member;
+use App\Photo;
 class RestArticleController extends Controller
 {
     /**
@@ -16,13 +18,17 @@ class RestArticleController extends Controller
     public function index(Request $request)
     {
         $memberId=$request['member_id'];
-        $userInfo=Member::find($memberId)->toArray();
-        $articles=Member::find($memberId)->articles->toArray();
+        $member=Member::find($memberId);
+        $userInfo=$member->toArray();
+        $articles=$member->articles->toArray();
+        
+        
         foreach($articles as &$article){
             $article['user_id']=$userInfo['user_id'];
             $article['icon']=$userInfo['icon'];
             $article['header']=$userInfo['header'];
             $article['name']=$userInfo['name'];
+            $article['photo'] = Article::find($article['id'])->photo?Article::find($article['id'])->photo->toArray()['url']:null;
         }
         return $articles;
         
@@ -46,9 +52,19 @@ class RestArticleController extends Controller
      */
     public function store(Request $request)
     {
+        
         $memberId=$request['member_id'];
         $data=$request->all();
         $nextId = DB::table('articles')->max('id') + 1;
+        
+        $files = $request->file();
+
+        foreach ($files as $file) {
+            
+            $file->store('images/memberId_'.$memberId);
+            $url= Storage::disk('local')->path('images/memberId_'.$memberId.'/'.$file->hashName());
+            
+        }
         $param=[
             // 'id'=>1,
             'created_at'=>date("Y-m-d H:i:s"),
@@ -56,11 +72,24 @@ class RestArticleController extends Controller
             'member_id'=>$memberId,
         ];
         DB::table('articles')->insert($param);
+        
+        if(isset($url)){
+            $param=[
+                // 'id'=>1,
+                'created_at'=>date("Y-m-d H:i:s"),
+                'article_id'=>$nextId,
+                'url'=>$url,
+            ];
+            
+            DB::table('photos')->insert($param);
+        }
+        
         return [
             'id'=>$nextId,
             'member_id'=>$memberId,
             'created_at'=>date("Y-m-d H:i:s"),
             'content'=>$data['text'],
+            'url'=>isset($url)?$url:null
         ];
     }
 

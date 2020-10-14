@@ -12,4 +12,7 @@ class Member extends Model
     function articles(){
         return $this->hasMany('App\Article');
     }
+    function photo(){
+        return $this->hasOne('App\Photo');
+    }
 }

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Member;
 use App\Token;
+
 class RestTestController2 extends Controller
 {
     /**
@@ -15,19 +16,24 @@ class RestTestController2 extends Controller
      */
     public function index(Request $request)
     {
-        $memberId=1;
-        $userInfo=Member::find($memberId)->toArray();
+        $memberId = 2;
+        $membersTable = Member::find($memberId);
         
-        $articles=Member::find($memberId)->articles->toArray();
-        foreach($articles as &$article){
-            $article['user_id']=$userInfo['user_id'];
-            $article['icon']=$userInfo['icon'];
-            $article['header']=$userInfo['header'];
-            $article['name']=$userInfo['name'];
+        
+        $userInfo = $membersTable->toArray();
+        $articles = $membersTable->articles->toArray();
+        
+        $photo = $membersTable;
+
+        foreach ($articles as &$article) {
+            $article['user_id'] = $userInfo['user_id'];
+            $article['icon'] = $userInfo['icon'];
+            $article['header'] = $userInfo['header'];
+            $article['name'] = $userInfo['name'];
+            $article['photo'] = Article::find($article['id'])->photo?Article::find($article['id'])->photo->toArray()['url']:null;
+            
         }
         dd($articles);
-    
-        
     }
 
     /**
