@@ -8,6 +8,7 @@ import CenterArea from './containers/centerarea'
 import Login from './containers/login'
 import { Switch, Route, Redirect } from 'react-router-dom';
 import './index.css'
+
 class App extends Component {
   componentWillMount() {
 
