@@ -82,15 +82,16 @@ class LoginController extends Controller
         $memberTable = Member::where('user_id', $userId)->first();
         $pass = Member::where('password', $pass)->first();
 
-
-        if ($memberTable == null || $pass == null) return ['error'=>'アクセストークンをヘッダにつけていないか、アクセストークンが間違ってる'];
+        if ($memberTable == null || $pass == null) return ['error'=>'ユーザ名、もしくはパスワードが間違っている'];
         $memberTable = $memberTable->toArray();
         // ここから同じコード
-        $tokenTable = Token::where('member_id', $memberTable['id']);
+        $tokenTable = Token::where('member_id', $memberTable['id'])->first();
+        
         if ($tokenTable != null) {
-
+            // return ['ある'];
             DB::table('tokens')->where('member_id', $memberTable['id'])->update(["access_token" => $accessToken]);
         } else {
+            // return ['ない'];
             DB::table('tokens')->insert([
                 "member_id" => $memberTable['id'],
                 'created_at' => date("Y-m-d H:i:s"),

@@ -6832,7 +6832,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "html {\n  background-color: rgb(20, 29, 38);\n  color: white;\n  padding: 0px;\n}\n\nbody{\n  /* background-color: red; */\n}\n/********************/\n\n\n/* 共有 */\n\n\n/********************/\n\n.font {\n  font-size: 15px;\n}\n\n.a-to-block {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n.block-to-center {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n.a-to-block2 {\n  display: block;\n  width: 100%;\n  height: 100%;\n  color: white;\n  text-decoration: none;\n}\n\n.blue-hover:hover{\n  -webkit-filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n/********************/\n\n\n/* 共有ここまで */\n\n\n/********************/\n\n.border {\n  border: 1px solid rgb(48, 60, 67);\n}\n\n.parent {\n  margin: 0 auto;\n  height: 100%;\n  width: 100%;\n}\n\n.left {\n  /* background-color: rgb(0, 15, 219); */\n  background-color: rgb(20, 29, 38);\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: 800px;\n  width: 70px;\n  margin: 0px;\n  padding: 0px;\n}\n\n.center {\n  /* background-color: orange; */\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: auto;\n  width: 560px ;\n  margin: 0px;\n  padding: 0px;\n  ;\n}\n\n.right {\n  /* background-color: red; */\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: 800px;\n  width: 0px;\n  margin: 0px;\n  padding: 0px;\n}\n\n\n/************************************************/\n\n\n/* アイコン系 */\n\n\n/* header */\n\n\n/************************************************/\n\n\n/* 新規アクションのアイコン系 */\n\n.new-action {\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.spreaded-icon-a{\n  height: 36px;\n}\n\n\n/* 新規アクションのアイコン系 終わり */\n\n.image-icon {\n  width: 30px;\n  height: 30px;\n  /* filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%) */\n}\n\ndiv.left>a {\n  display: block;\n}\n\n.div-outside-image {\n  width: 70px;\n  height: 70px;\n  margin: 10px auto;\n}\n\n.if-spread {\n  width: 50px;\n  height: 50px;\n  margin: 10px 0px 10px 30px;\n}\n\n\n\n.site-image-icon {\n  width: 40px;\n  height: 40px;\n}\n\n.site-image {\n  margin-top: 20px;\n  margin-bottom: 40px;\n}\n\n.post-icon {\n  background-color:rgb(64, 169, 255);\n}\n\n.post-icon:hover {\n  background: #3790da;\n}\n\n\n\n.outer {\n  border-radius: 100px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 13px 20px;\n}\n\n\n/* .icon-discription {\n  font-weight: 900;\n  position: absolute;\n  left: 100px;\n  font-size: larger;\n} */\n\n.icon-to-center-for-a {\n  display: block;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  border-radius: 50%;\n}\n\n.icon-to-center-for-a:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.icon-to-center-for-img {\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: auto;\n}\n\n\n/* すべて展開したときの動作 */\n\n.if-spreaded {\n  display: inline-flex;\n  margin: 5px 20px;\n}\n\n.spreaded-icon-a {\n  color: white;\n  text-decoration: none;\n  display: block;\n  /* background-color: red; */\n  border-radius: 100px;\n  padding: 8px 15px;\n}\n\n.spreaded-icon-a:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.img-size {\n  width: 30px;\n}\n\n.spreaded-icon-name {\n  float: left;\n  margin-left: 20px;\n  margin-right: 10px;\n  font-size: 20px;\n  font-weight: bold;\n}\n\n\n/************************************************/\n\n\n/* ライムライン系 */\n\n\n/************************************************/\n\n\n/* ホーム */\n\n.menu-name-parent {\n  /* background-color: red; */\n  height: 50px;\n  border-bottom: 2px solid rgb(48, 60, 67);\n  /* border-top: 2px solid rgb(48, 60, 67); */\n  position: relative;\n}\n\n.menu-name {\n  font-size: larger;\n  font-weight: bold;\n  position: absolute;\n  top: 50%;\n  transform: translate(30%, -50%);\n}\n\n\n/* 投稿画面 */\n\n.post-screen {\n  height: 150px;\n}\n\n\n/* --- INPUT=TEXTの標準デザイン設定 ---------------------*/\n\n.text-area {\n  display: block;\n  /* width: 90%; */\n  /* 入力域の最大幅 */\n  background: transparent;\n  /* 入力域の背景色 */\n  border-bottom: 1px solid rgb(48, 60, 67);\n  /* 入力域の枠線   */\n  border-radius: 4px;\n  /* 入力域の角丸   */\n  padding: 8px;\n  /* 入力文字の余白 */\n  font-size: 16px;\n  /* 入力文字サイズ */\n  color: white;\n  /* 入力文字の色   */\n  font-weight: bold;\n  /* 入力文字の太字 */\n  letter-spacing: .1em;\n  /* 入力文字の間隔 */\n  line-height: 19px;\n  /* 入力文字の間隔 */\n  overflow: scroll;\n  /* margin: 5px auto; */\n}\n\n\n/* --- 入力フィールドにフォーカスか来たら ----------------*/\n\n.text-area:focus {\n  /* border-color: white; */\n  /* 枠線色     */\n  background-color: transparent;\n  /* 背景色     */\n  outline: 0;\n}\n\n\n/* --- 入力説明の文字(標準) -----------------------------*/\n\n.text-area:-moz-placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.text-area:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.text-area:placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/\n\n.text-area::-webkit-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(IE用) -----------------------------*/\n\n.text-area:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* ユーザアイコン */\n\n\n/* 投稿ボタン */\n\n.btn--orange,\na.btn--orange {\n  color: #fff;\n  background-color: rgb(64, 169, 255);\n}\n\n.btn--orange:hover,\na.btn--orange:hover {\n  color: #fff;\n  background: rgb(55, 144, 218);\n}\n\na.btn--radius {\n  border-radius: 100vh;\n}\n\n.btn,\na.btn,\nbutton.btn {\n  font-size: large;\n  font-weight: 700;\n  /* line-height: 1.5; */\n  position: relative;\n  display: inline-block;\n  padding: 3px 30px;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  transition: all 0.3s;\n  text-align: center;\n  vertical-align: middle;\n  text-decoration: none;\n  letter-spacing: 0.1em;\n  color: #fff;\n  border-radius: 0.5rem;\n  margin: 0 0 0 auto;\n}\n\n\n/************************/\n\n\n/* 右側 */\n\n\n/************************/\n\n\n/* 検索バー*/\n\n\n/* --- INPUT=TEXTの標準デザイン設定 ---------------------*/\n\n.search-bar {\n  display: block;\n  width: 80%;\n  height: 20px;\n  background-color: transparent;\n  border: 0px;\n  display: block;\n  /* width: 90%; */\n  /* 入力域の最大幅 */\n  background: transparent;\n  /* 入力域の背景色 */\n  border: 0px;\n  /* 入力域の枠線   */\n  /* border-radius: 4px; */\n  /* 入力域の角丸   */\n  padding: 10px 0;\n  /* 入力文字の余白 */\n  font-size: 16px;\n  /* 入力文字サイズ */\n  color: white;\n  /* 入力文字の色   */\n  font-weight: bold;\n  /* 入力文字の太字 */\n  letter-spacing: .1em;\n  /* 入力文字の間隔 */\n  line-height: 19px;\n  /* 入力文字の間隔 */\n  overflow: scroll;\n  /* margin: 5px auto; */\n}\n\n\n/* --- 入力フィールドにフォーカスか来たら ----------------*/\n\n.search-bar:focus {\n  /* border: 1px solid white; */\n  /* 枠線色     */\n  background-color: transparent;\n  /* 背景色     */\n  outline: 0;\n}\n\n.search-icon .search-bar:focus {\n  width: 100px;\n  /* border: 1px solid white; */\n}\n\n\n/* --- 入力説明の文字(標準) -----------------------------*/\n\n.search-bar:-moz-placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.search-bar:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.search-bar:placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/\n\n.search-bar::-webkit-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(IE用) -----------------------------*/\n\n.search-bar:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/****************************************************************/\n\n\n/* 通知 */\n\n\n/****************************************************************/\n\n.notification-button-rep:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n.notification-button-all:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n.blue-when-hover:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n\n/****************************************************************/\n\n\n/* プロフィール */\n\n\n/****************************************************************/\n\n.edit-prof:hover {\n  background-color: rgba(86, 86, 255, 0.123);\n}\n.header-image{\n  width: 100%;\n    height: 200px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -o-object-position: 0% 28%;\n       object-position: 0% 28%;\n}\n.user-image-a{\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 1%;\n  transform: translate(0, -50%);\n}\n.user-image-image-tag{\n  width: 140px;\n    border-radius: 50%;\n    height: 140px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -o-object-position: 20% 45%;\n       object-position: 20% 45%;\n    border: 5px solid rgb(20, 29, 38);\n}\n\n/* 投稿、返信、写真、グッドの装飾 */\n.profile-item{\n  padding: 15px 0;\n  float:left;width: calc(100%/2);\n  font-weight: bold;\n  border-bottom: 3px solid rgb(48, 60, 67);\n}\n\n/* 投稿の下のボタン */\n.rep-button{\n  position: relative;\n  border-radius: 50%;\n  width: 40px;\n  height: 40px;\n  margin-bottom: 5px;\n}\n.rep-button:hover{\n  background-color: rgba(90, 230, 255, 0.068);\n}\n.post-button{\n  width:calc(100%/2) ;\n  border-bottom:1px solid rgb(48, 60, 67);\n}\n/****************************************************************/\n\n\n/* 設定 */\n\n\n/****************************************************************/\n\n.setting-outer {\n  height: auto;\n  position: relative;\n  padding: 10px 15px;\n  border-bottom: 1px solid rgb(56, 68, 77);\n}\n\n.setting-menu-inner {\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  font-size: 20px;\n  font-weight: bold;\n}\n\n.setting-inner {\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  font-size: 15px;\n}\n\n.right-icon {\n  width: 13px;\n}\n\n.setting-name-hover:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n}\n\n\n/* ユーザ画像を丸くする */\n.radi50{\n  border-radius: 50%;\n}\n\n/****************************************************************/\n\n\n/* ログアウト */\n\n\n/****************************************************************/\n.logout{\n  padding: 10px;\n  border-radius: 9999px;\n}\n.logout:hover{\n  \n  background-color: rgba(90, 230, 255, 0.068);\n}\n\n", ""]);
+exports.push([module.i, "html {\n  background-color: rgb(20, 29, 38);\n  color: white;\n  padding: 0px;\n}\n\nbody{\n  /* background-color: red; */\n}\n/********************/\n\n\n/* 共有 */\n\n\n/********************/\n\n.font {\n  font-size: 15px;\n}\n\n.a-to-block {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n.block-to-center {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n\n.a-to-block2 {\n  display: block;\n  width: 100%;\n  height: 100%;\n  color: white;\n  text-decoration: none;\n}\n\n.blue-hover:hover{\n  -webkit-filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n/********************/\n\n\n/* 共有ここまで */\n\n\n/********************/\n\n.border {\n  border: 1px solid rgb(48, 60, 67);\n}\n\n.parent {\n  margin: 0 auto;\n  height: 100%;\n  width: 100%;\n}\n\n.left {\n  /* background-color: rgb(0, 15, 219); */\n  background-color: rgb(20, 29, 38);\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: 800px;\n  width: 70px;\n  margin: 0px;\n  padding: 0px;\n}\n\n.center {\n  /* background-color: orange; */\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: auto;\n  width: 560px ;\n  margin: 0px;\n  padding: 0px;\n  ;\n}\n\n.right {\n  /* background-color: red; */\n  width: 100px;\n  height: 100px;\n  float: left;\n  /* display: inline-block; */\n  height: 800px;\n  width: 0px;\n  margin: 0px;\n  padding: 0px;\n}\n\n\n/************************************************/\n\n\n/* アイコン系 */\n\n\n/* header */\n\n\n/************************************************/\n\n\n/* 新規アクションのアイコン系 */\n\n.new-action {\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.spreaded-icon-a{\n  height: 36px;\n}\n\n\n/* 新規アクションのアイコン系 終わり */\n\n.image-icon {\n  width: 30px;\n  height: 30px;\n  /* filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%) */\n}\n\ndiv.left>a {\n  display: block;\n}\n\n.div-outside-image {\n  width: 70px;\n  height: 70px;\n  margin: 10px auto;\n}\n\n.if-spread {\n  width: 50px;\n  height: 50px;\n  margin: 10px 0px 10px 30px;\n}\n\n\n\n.site-image-icon {\n  width: 40px;\n  height: 40px;\n}\n\n.site-image {\n  margin-top: 20px;\n  margin-bottom: 40px;\n}\n\n.post-icon {\n  background-color:rgb(64, 169, 255);\n}\n\n.post-icon:hover {\n  background: #3790da;\n}\n\n\n\n.outer {\n  border-radius: 100px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 13px 20px;\n}\n\n\n/* .icon-discription {\n  font-weight: 900;\n  position: absolute;\n  left: 100px;\n  font-size: larger;\n} */\n\n.icon-to-center-for-a {\n  display: block;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  border-radius: 50%;\n}\n\n.icon-to-center-for-a:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.icon-to-center-for-img {\n  display: block;\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: auto;\n}\n\n\n/* すべて展開したときの動作 */\n\n.if-spreaded {\n  display: inline-flex;\n  margin: 5px 20px;\n}\n\n.spreaded-icon-a {\n  color: white;\n  text-decoration: none;\n  display: block;\n  /* background-color: red; */\n  border-radius: 100px;\n  padding: 8px 15px;\n}\n\n.spreaded-icon-a:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);\n}\n\n.img-size {\n  width: 30px;\n}\n\n.spreaded-icon-name {\n  float: left;\n  margin-left: 20px;\n  margin-right: 10px;\n  font-size: 20px;\n  font-weight: bold;\n}\n\n\n/************************************************/\n\n\n/* ライムライン系 */\n\n\n/************************************************/\n\n\n/* ホーム */\n\n.menu-name-parent {\n  /* background-color: red; */\n  height: 50px;\n  border-bottom: 2px solid rgb(48, 60, 67);\n  /* border-top: 2px solid rgb(48, 60, 67); */\n  position: relative;\n}\n\n.menu-name {\n  font-size: larger;\n  font-weight: bold;\n  position: absolute;\n  top: 50%;\n  transform: translate(30%, -50%);\n}\n\n\n/* 投稿画面 */\n\n.post-screen {\n  height: 150px;\n}\n#filesend{\n  display: none;\n}\n.send-pic:hover{\n  background-color: rgba(90, 230, 255, 0.068);\n  cursor: pointer;\n}\n.pointer{\n  cursor: pointer;\n}\n\n/* --- INPUT=TEXTの標準デザイン設定 ---------------------*/\n\n.text-area {\n  display: block;\n  /* width: 90%; */\n  /* 入力域の最大幅 */\n  background: transparent;\n  /* 入力域の背景色 */\n  border-bottom: 1px solid rgb(48, 60, 67);\n  /* 入力域の枠線   */\n  border-radius: 4px;\n  /* 入力域の角丸   */\n  padding: 8px;\n  /* 入力文字の余白 */\n  font-size: 16px;\n  /* 入力文字サイズ */\n  color: white;\n  /* 入力文字の色   */\n  font-weight: bold;\n  /* 入力文字の太字 */\n  letter-spacing: .1em;\n  /* 入力文字の間隔 */\n  line-height: 19px;\n  /* 入力文字の間隔 */\n  overflow: scroll;\n  /* margin: 5px auto; */\n}\n\n\n/* --- 入力フィールドにフォーカスか来たら ----------------*/\n\n.text-area:focus {\n  /* border-color: white; */\n  /* 枠線色     */\n  background-color: transparent;\n  /* 背景色     */\n  outline: 0;\n}\n\n\n/* --- 入力説明の文字(標準) -----------------------------*/\n\n.text-area:-moz-placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.text-area:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.text-area:placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/\n\n.text-area::-webkit-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(IE用) -----------------------------*/\n\n.text-area:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* ユーザアイコン */\n\n\n/* 投稿ボタン */\n\n.btn--orange,\na.btn--orange {\n  color: #fff;\n  background-color: rgb(64, 169, 255);\n}\n\n.btn--orange:hover,\na.btn--orange:hover {\n  color: #fff;\n  background: rgb(55, 144, 218);\n}\n\na.btn--radius {\n  border-radius: 100vh;\n}\n\n.btn,\na.btn,\nbutton.btn {\n  font-size: large;\n  font-weight: 700;\n  /* line-height: 1.5; */\n  position: relative;\n  display: inline-block;\n  padding: 3px 30px;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  transition: all 0.3s;\n  text-align: center;\n  vertical-align: middle;\n  text-decoration: none;\n  letter-spacing: 0.1em;\n  color: #fff;\n  border-radius: 0.5rem;\n  margin: 0 0 0 auto;\n}\n\n\n/************************/\n\n\n/* 右側 */\n\n\n/************************/\n\n\n/* 検索バー*/\n\n\n/* --- INPUT=TEXTの標準デザイン設定 ---------------------*/\n\n.search-bar {\n  display: block;\n  width: 80%;\n  height: 20px;\n  background-color: transparent;\n  border: 0px;\n  display: block;\n  /* width: 90%; */\n  /* 入力域の最大幅 */\n  background: transparent;\n  /* 入力域の背景色 */\n  border: 0px;\n  /* 入力域の枠線   */\n  /* border-radius: 4px; */\n  /* 入力域の角丸   */\n  padding: 10px 0;\n  /* 入力文字の余白 */\n  font-size: 16px;\n  /* 入力文字サイズ */\n  color: white;\n  /* 入力文字の色   */\n  font-weight: bold;\n  /* 入力文字の太字 */\n  letter-spacing: .1em;\n  /* 入力文字の間隔 */\n  line-height: 19px;\n  /* 入力文字の間隔 */\n  overflow: scroll;\n  /* margin: 5px auto; */\n}\n\n\n/* --- 入力フィールドにフォーカスか来たら ----------------*/\n\n.search-bar:focus {\n  /* border: 1px solid white; */\n  /* 枠線色     */\n  background-color: transparent;\n  /* 背景色     */\n  outline: 0;\n}\n\n.search-icon .search-bar:focus {\n  width: 100px;\n  /* border: 1px solid white; */\n}\n\n\n/* --- 入力説明の文字(標準) -----------------------------*/\n\n.search-bar:-moz-placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.search-bar:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n.search-bar:placeholder-shown {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/\n\n.search-bar::-webkit-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/* --- 入力説明の文字(IE用) -----------------------------*/\n\n.search-bar:-ms-input-placeholder {\n  color: rgba(106, 123, 135);\n  /* 文字色     */\n}\n\n\n/****************************************************************/\n\n\n/* 通知 */\n\n\n/****************************************************************/\n\n.notification-button-rep:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n.notification-button-all:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n.blue-when-hover:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n  color: rgb(29, 161, 242);\n}\n\n\n/****************************************************************/\n\n\n/* プロフィール */\n\n\n/****************************************************************/\n\n.edit-prof:hover {\n  background-color: rgba(86, 86, 255, 0.123);\n}\n.header-image{\n  width: 100%;\n    height: 200px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -o-object-position: 0% 28%;\n       object-position: 0% 28%;\n}\n.user-image-a{\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 1%;\n  transform: translate(0, -50%);\n}\n.user-image-image-tag{\n  width: 140px;\n    border-radius: 50%;\n    height: 140px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    -o-object-position: 20% 45%;\n       object-position: 20% 45%;\n    border: 5px solid rgb(20, 29, 38);\n}\n\n/* 投稿、返信、写真、グッドの装飾 */\n.profile-item{\n  padding: 15px 0;\n  float:left;width: calc(100%/2);\n  font-weight: bold;\n  border-bottom: 3px solid rgb(48, 60, 67);\n}\n\n/* 投稿の下のボタン */\n.rep-button{\n  position: relative;\n  border-radius: 50%;\n  width: 40px;\n  height: 40px;\n  margin-bottom: 5px;\n}\n.rep-button:hover{\n  background-color: rgba(90, 230, 255, 0.068);\n}\n.post-button{\n  width:calc(100%/2) ;\n  border-bottom:1px solid rgb(48, 60, 67);\n}\n/****************************************************************/\n\n\n/* 設定 */\n\n\n/****************************************************************/\n\n.setting-outer {\n  height: auto;\n  position: relative;\n  padding: 10px 15px;\n  border-bottom: 1px solid rgb(56, 68, 77);\n}\n\n.setting-menu-inner {\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  font-size: 20px;\n  font-weight: bold;\n}\n\n.setting-inner {\n  position: absolute;\n  top: 50%;\n  transform: translate(0, -50%);\n  font-size: 15px;\n}\n\n.right-icon {\n  width: 13px;\n}\n\n.setting-name-hover:hover {\n  background-color: rgba(90, 230, 255, 0.068);\n}\n\n\n/* ユーザ画像を丸くする */\n.radi50{\n  border-radius: 50%;\n}\n\n/****************************************************************/\n\n\n/* ログアウト */\n\n\n/****************************************************************/\n.logout{\n  padding: 10px;\n  border-radius: 9999px;\n}\n.logout:hover{\n  \n  background-color: rgba(90, 230, 255, 0.068);\n}\n\n", ""]);
 
 // exports
 
@@ -77187,56 +77187,61 @@ var receiveArticles = function receiveArticles(responce, error) {
 var post = function post(requestData, token) {
   return /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(dispatch, getState) {
-      var option, responce, data;
+      var imageFile, formData, option, responce, data;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
+              imageFile = document.querySelector("#filesend").files[0];
+              console.log(requestData);
+              formData = new FormData();
+              formData.append('text', requestData.text);
+              formData.append('imageFile', imageFile);
               option = {
                 method: 'post',
                 headers: {
-                  'Content-Type': 'application/json',
+                  // 'Content-Type': 'application/json',
                   'access_token': token,
                   'X-CSRF-TOKEN': '5xFoCpfLihSVCf6gU8mY0Ko1n0HVYHbclMQFPSXj'
                 },
-                body: JSON.stringify(requestData)
+                body: formData
               }; // dispatch(startRequest(category)); // categoryIdからcategoryに変更
 
-              _context.prev = 1;
-              _context.next = 4;
+              _context.prev = 6;
+              _context.next = 9;
               return fetch('http://localhost:8000/api/article', option);
 
-            case 4:
+            case 9:
               responce = _context.sent;
-              _context.next = 7;
+              _context.next = 12;
               return responce.json();
 
-            case 7:
+            case 12:
               data = _context.sent;
 
               if (!('error' in data)) {
-                _context.next = 10;
+                _context.next = 15;
                 break;
               }
 
               throw data;
 
-            case 10:
+            case 15:
               dispatch(receivePostData(data, null));
-              _context.next = 16;
+              _context.next = 21;
               break;
 
-            case 13:
-              _context.prev = 13;
-              _context.t0 = _context["catch"](1);
+            case 18:
+              _context.prev = 18;
+              _context.t0 = _context["catch"](6);
               dispatch(receivePostData(null, _context.t0));
 
-            case 16:
+            case 21:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee, null, [[1, 13]]);
+      }, _callee, null, [[6, 18]]);
     }));
 
     return function (_x, _x2) {
@@ -77548,13 +77553,15 @@ var getAccesstoken = function getAccesstoken() {
 /*!******************************************!*\
   !*** ./resources/js/src/actions/home.js ***!
   \******************************************/
-/*! exports provided: inputPostText, clearTextBox */
+/*! exports provided: inputPostText, clearTextBox, imageChoce, imageClear */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "inputPostText", function() { return inputPostText; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clearTextBox", function() { return clearTextBox; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "imageChoce", function() { return imageChoce; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "imageClear", function() { return imageClear; });
 var inputPostText = function inputPostText(text) {
   return {
     type: 'INPUT_POST_TEXT',
@@ -77568,6 +77575,22 @@ var clearTextBox = function clearTextBox() {
     type: 'CLEAR_TEXT',
     payload: {
       text: ''
+    }
+  };
+};
+var imageChoce = function imageChoce(imageUrl) {
+  return {
+    type: 'IMAGE_CHOICE',
+    payload: {
+      imageUrl: imageUrl
+    }
+  };
+};
+var imageClear = function imageClear(imageUrl) {
+  return {
+    type: 'IMAGE_CLEAR',
+    payload: {
+      imageUrl: imageUrl
     }
   };
 };
@@ -77894,10 +77917,13 @@ var DmParts = function DmParts(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_pic_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/pic.png */ "./resources/js/src/components/images/pic.png");
-/* harmony import */ var _images_pic_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_pic_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_user_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/user.jpg */ "./resources/js/src/components/images/user.jpg");
-/* harmony import */ var _images_user_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_user_jpg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _images_pic_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/pic.png */ "./resources/js/src/components/images/pic.png");
+/* harmony import */ var _images_pic_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_pic_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_batsu_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/batsu.png */ "./resources/js/src/components/images/batsu.png");
+/* harmony import */ var _images_batsu_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_batsu_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_user_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/user.jpg */ "./resources/js/src/components/images/user.jpg");
+/* harmony import */ var _images_user_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_user_jpg__WEBPACK_IMPORTED_MODULE_4__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -77920,11 +77946,13 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
- // import { Link } from 'react-router-dom';
-// 画像
+
+ // 画像
 
 
 
+
+var createObjectURL = (window.URL || window.webkitURL).createObjectURL || window.createObjectURL;
 
 var Home = /*#__PURE__*/function (_React$Component) {
   _inherits(Home, _React$Component);
@@ -77938,6 +77966,17 @@ var Home = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(Home, [{
+    key: "handleChangeFile",
+    value: function handleChangeFile(e) {
+      var files = e.target.files;
+      console.log(files); // ②createObjectURLで、files[0]を読み込む
+
+      var imageUrl = files.length === 0 ? "" : createObjectURL(files[0]);
+      console.log(imageUrl); // ③setStateする！
+
+      this.props.imageChoce(imageUrl);
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this = this;
@@ -77949,12 +77988,6 @@ var Home = /*#__PURE__*/function (_React$Component) {
         createdAt: "202x年x月x日",
         postImageUrl: "./src/work/image/user.jpg"
       };
-      var request = {
-        method: "post",
-        body: {
-          test: "test"
-        }
-      };
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "main-container",
         style: {
@@ -77962,24 +77995,14 @@ var Home = /*#__PURE__*/function (_React$Component) {
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: {
-          borderBottom: "8px solid rgb(48, 60, 67)",
-          height: "auto",
-          padding: "10px"
-        },
-        className: "post-screen"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          "float": "left"
-        },
-        "aria-label": "\u30E6\u30FC\u30B6\u30A2\u30A4\u30B3\u30F3"
+          width: "100%",
+          display: "inline-flex",
+          borderBottom: "5px solid rgb(48, 60, 67)"
+        }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: {
           margin: "5px"
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "",
-        href: "",
-        "aria-label": "\u30E6\u30FC\u30B6\u30A2\u30A4\u30B3\u30F3"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         style: {
           width: "50px",
@@ -77989,7 +78012,12 @@ var Home = /*#__PURE__*/function (_React$Component) {
         className: "",
         src: this.props.iconUrl,
         alt: "\u30E6\u30FC\u30B6\u30A2\u30A4\u30B3\u30F3"
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          display: "block",
+          width: "inherit"
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onFocus: function onFocus(e) {
           return _this.props.inputPostText(e.target.innerText);
         },
@@ -77997,29 +78025,83 @@ var Home = /*#__PURE__*/function (_React$Component) {
           return _this.props.inputPostText(e.target.innerText);
         },
         className: "text-area",
+        style: {
+          padding: "10px",
+          fontSize: "20px",
+          margin: "10px 20px 0 20px",
+          width: "440px"
+        },
         contentEditable: "true"
-      }, this.props.text), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.props.text), function () {
+        if (_this.props.imageUrl != undefined) {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            style: {
+              position: "relative",
+              margin: "5px 15px 0 0",
+              padding: "10px",
+              textAlign: "center",
+              borderRadius: "20px"
+            },
+            "aria-label": "\u6295\u7A3F\u3057\u305F\u5199\u771F\u3092\u8868\u793A"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            src: _this.props.imageUrl,
+            style: {
+              width: "90%",
+              borderRadius: "20px",
+              height: "250px",
+              objectFit: "cover"
+            }
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+            className: "pointer",
+            onClick: function onClick() {
+              return _this.props.imageClear();
+            },
+            src: _images_batsu_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+            style: {
+              backgroundColor: "black",
+              borderRadius: "100%",
+              top: "5px",
+              left: "10px",
+              position: "absolute",
+              width: "20px"
+            }
+          }));
+        }
+      }(), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: {
           display: "flex",
           marginTop: "15px",
-          marginBottom: "5px"
+          marginBottom: "5px",
+          marginRight: "10px"
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: {
           display: "flex",
           marginLeft: "auto"
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        "class": "filelabel",
+        title: "\u30D5\u30A1\u30A4\u30EB\u3092\u9078\u629E"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "a-to-block2 send-pic",
         style: {
-          margin: "0 5px"
-        },
-        className: "icon-link simple-icon",
-        href: "",
-        "aria-label": "\u5199\u771F\u8FFD\u52A0"
+          marginTop: "5px",
+          textAlign: "center",
+          borderRadius: "100%",
+          marginRight: "20px"
+        }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_pic_png__WEBPACK_IMPORTED_MODULE_2___default.a,
         className: "image-icon",
-        src: _images_pic_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-        alt: "\u5199\u771F\u8FFD\u52A0\u30A2\u30A4\u30B3\u30F3"
+        alt: "\uFF0B\u753B\u50CF"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "file",
+        id: "filesend",
+        name: "photo",
+        accesst: ".jpg,image/jpeg,image/png",
+        onChange: function onChange(e) {
+          return _this.handleChangeFile(e);
+        }
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         onClick: function onClick() {
           _this.props.post(_this.props.requestData, _this.props.accessToken);
@@ -78031,7 +78113,7 @@ var Home = /*#__PURE__*/function (_React$Component) {
         },
         className: "btn btn--orange btn--radius",
         "aria-label": "\u6295\u7A3F\u30DC\u30BF\u30F3"
-      }, "\u6295\u7A3F")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OtherPost, PostedUserInfo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OtherPost, PostedUserInfo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OtherPost, PostedUserInfo)));
+      }, "\u6295\u7A3F"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OtherPost, PostedUserInfo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OtherPost, PostedUserInfo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(OtherPost, PostedUserInfo)));
     }
   }]);
 
@@ -78068,7 +78150,7 @@ var OtherPost = function OtherPost(props) {
       borderRadius: "50%"
     },
     className: "",
-    src: _images_user_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    src: _images_user_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
     alt: "\u30E6\u30FC\u30B6\u30A2\u30A4\u30B3\u30F3"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
@@ -78120,7 +78202,7 @@ var OtherPost = function OtherPost(props) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: ""
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_user_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
+        src: _images_user_jpg__WEBPACK_IMPORTED_MODULE_4___default.a,
         alt: "\u6295\u7A3F\u3057\u305F\u5199\u771F\u3092\u8868\u793A",
         style: {
           width: "90%",
@@ -79059,7 +79141,8 @@ var UserPost = function UserPost(props) {
       user_id = props.user_id,
       name = props.name,
       header = props.header,
-      icon = props.icon;
+      icon = props.icon,
+      url = props.url;
   console.log(id, created_at, content, user_id, name, header, icon);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
@@ -79138,7 +79221,7 @@ var UserPost = function UserPost(props) {
     "aria-label": "\u6295\u7A3F\u3057\u305F\u6587\u5B57\u3092\u8868\u793A"
   }, content), function () {
     // 写真があれば表示
-    if (typeof header !== 'undefined') {
+    if (url != null) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: {
           padding: "5px 0"
@@ -79147,7 +79230,7 @@ var UserPost = function UserPost(props) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: ""
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: header,
+        src: url,
         alt: "\u6295\u7A3F\u3057\u305F\u5199\u771F\u3092\u8868\u793A",
         style: {
           width: "90%",
@@ -79466,6 +79549,17 @@ var RightItem2 = function RightItem2(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Setting);
+
+/***/ }),
+
+/***/ "./resources/js/src/components/images/batsu.png":
+/*!******************************************************!*\
+  !*** ./resources/js/src/components/images/batsu.png ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/batsu.png?86316e83170a4f10413d4cbba3de56a0";
 
 /***/ }),
 
@@ -80631,9 +80725,11 @@ var mapStateToProps = function mapStateToProps(state, ownProps) {
     accessToken: state.userInfo.user.accessToken,
     error: false,
     requestData: {
-      text: state.home.text
+      text: state.home.text,
+      imageFile: state.home.imageFile
     },
-    text: state.home.text
+    text: state.home.text,
+    imageUrl: state.home.imageUrl
   };
 };
 
@@ -80647,6 +80743,12 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
     },
     clearTextBox: function clearTextBox() {
       dispatch(_actions_home__WEBPACK_IMPORTED_MODULE_3__["clearTextBox"]());
+    },
+    imageChoce: function imageChoce(imageUrl) {
+      dispatch(_actions_home__WEBPACK_IMPORTED_MODULE_3__["imageChoce"](imageUrl));
+    },
+    imageClear: function imageClear() {
+      dispatch(_actions_home__WEBPACK_IMPORTED_MODULE_3__["imageClear"]());
     }
   };
 };
@@ -80819,8 +80921,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_centerarea_profile_profile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/centerarea/profile/profile */ "./resources/js/src/components/centerarea/profile/profile.js");
 /* harmony import */ var _actions_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../actions/fetch */ "./resources/js/src/actions/fetch.js");
 /* harmony import */ var _actions_profile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../actions/profile */ "./resources/js/src/actions/profile.js");
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 // src/containers/Ranking.js
 
 
@@ -80828,7 +80928,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
-  return _defineProperty({
+  return {
     userName: state.userInfo.user.userName,
     userId: state.userInfo.user.userId,
     iconUrl: state.userInfo.user.iconUrl,
@@ -80844,7 +80944,7 @@ var mapStateToProps = function mapStateToProps(state, ownProps) {
     picObj: state.profile.picObj,
     // ぐっと
     goodObj: state.profile.goodObj
-  }, "articles", state.articles.user);
+  };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
@@ -81077,8 +81177,6 @@ var initialState = {
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
-  console.log('STATE  STATE  STATE  STATE  STATE  STATE  STATE  ');
-  console.log(state);
 
   switch (action.type) {
     case 'RECEIVE_POST_DATA':
@@ -81166,12 +81264,15 @@ var initialState = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // 初期状態
 var initialState = {
   // ホーム画面で投稿するときの投稿するデータの形
-  requestData: {
-    text: ''
-  },
   text: '',
   response: '',
   error: false
@@ -81182,15 +81283,30 @@ var initialState = {
 
   switch (action.type) {
     case 'INPUT_POST_TEXT':
-      return {
+      return _objectSpread(_objectSpread({}, state), {}, {
         text: action.payload.text
-      };
+      });
 
     case 'CLEAR_TEXT':
       // 投稿ボタンを押したら文字を消す
       return {
-        text: ''
+        text: undefined,
+        imageFile: undefined,
+        imageUrl: undefined
       };
+      break;
+
+    case 'IMAGE_CHOICE':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        imageUrl: action.payload.imageUrl
+      });
+      break;
+
+    case 'IMAGE_CLEAR':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        imageUrl: undefined
+      });
+      break;
 
     default:
       return state;
@@ -81266,7 +81382,7 @@ var filter = {
 }; // 初期状態
 
 var initialState = {
-  style: [{}, {}, {}, {}, {}],
+  style: [filter, {}, {}, {}, {}],
   response: '',
   error: false
 };
